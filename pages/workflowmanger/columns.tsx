@@ -161,52 +161,52 @@ const ActionsCell = ({ row, table }: { row: any, table: any }) => {
     };
 
 
-    // const processRow = async (sortedData:any,row: any) => {
-    //     try {
-    //         console.log('Processing row:', row);
-    //         console.log('Processing row_name:', row.name);
-
-    //         const { runoutput, runresult } = await fetchWsEndpoint(sortedData,row);
-    //         console.log('runoutput:', runoutput);
-    //         console.log('runresult:', runresult);
-    //         return { ...row, output: runoutput, status: runresult };
-    //     } catch (error) {
-    //         console.error('Error processing row:', error);
-    //         return { ...row, status: 'Error' };
-    //     }
-    // };
-
-    //调用 api 接口处理
-    const processRow = async (sortedData: any, row: any) => {
+    const processRow = async (sortedData:any,row: any) => {
         try {
             console.log('Processing row:', row);
             console.log('Processing row_name:', row.name);
 
-            const allData = await getAllData(row.name);
-            console.log('All Data:', allData);
-            return {
-                ...row,
-                gaodeName: allData.gaode.name,
-                gaodeAddress: allData.gaode.address,
-                gaodePhone: allData.gaode.phone,
-                tengxunName: allData.tengxun.name,
-                tengxunAddress: allData.tengxun.address,
-                tengxunPhone: allData.tengxun.phone,
-                baiduName: allData.baidu.name,
-                baiduAddress: allData.baidu.address,
-                baiduPhone: allData.baidu.phone
-            };
+            const { runoutput, runresult } = await fetchWsEndpoint(sortedData,row);
+            console.log('runoutput:', runoutput);
+            console.log('runresult:', runresult);
+            return { ...row, output: runoutput, status: runresult };
         } catch (error) {
             console.error('Error processing row:', error);
             return { ...row, status: 'Error' };
         }
     };
 
+    //调用 api 接口处理
+    // const processRow = async (sortedData: any, row: any) => {
+    //     try {
+    //         console.log('Processing row:', row);
+    //         console.log('Processing row_name:', row.name);
+
+    //         const allData = await getAllData(row.name);
+    //         console.log('All Data:', allData);
+    //         return {
+    //             ...row,
+    //             gaodeName: allData.gaode.name,
+    //             gaodeAddress: allData.gaode.address,
+    //             gaodePhone: allData.gaode.phone,
+    //             tengxunName: allData.tengxun.name,
+    //             tengxunAddress: allData.tengxun.address,
+    //             tengxunPhone: allData.tengxun.phone,
+    //             baiduName: allData.baidu.name,
+    //             baiduAddress: allData.baidu.address,
+    //             baiduPhone: allData.baidu.phone
+    //         };
+    //     } catch (error) {
+    //         console.error('Error processing row:', error);
+    //         return { ...row, status: 'Error' };
+    //     }
+    // };
+
     async function processRows(sortedData: any, dataObjects: string | any[], start: number, step: number) {
         const processedData = [];
 
         // for (let i = start; i < dataObjects.length; i += step) {
-        for (let i = start; i < 1167; i += step) {
+        for (let i = start; i < dataObjects.length; i += step) {
             const row = dataObjects[i];
             
             try {
@@ -251,12 +251,21 @@ const ActionsCell = ({ row, table }: { row: any, table: any }) => {
         let runoutput;
         let runresult;
         try {
-            const res = await fetch('/api/browser_run', {
+            // const res = await fetch('/api/browser_run', {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json'
+            //     },
+            //     body: JSON.stringify({ sortedData, row, selectedValue_1, selectedValue_2 })
+            // });
+            // http://localhost:8082
+            // https://test1-container-omqcnm4zaq-uc.a.run.app
+            const res = await fetch('https://test1-container-omqcnm4zaq-uc.a.run.app/scrape', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ sortedData, row, selectedValue_1, selectedValue_2 })
+                body: JSON.stringify({ sortedData, row, task_name:"批量刊登" })
             });
             const reader = res.body?.getReader();
             const decoder = new TextDecoder('utf-8');
