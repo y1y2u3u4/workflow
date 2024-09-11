@@ -1,0 +1,1046 @@
+.supportingText,
+.text {
+  align-self: stretch;
+  position: relative;
+}
+.text {
+  line-height: 28px;
+  font-weight: 600;
+}
+.supportingText {
+  height: 20px;
+  font-size: var(--text-sm-semibold-size);
+  line-height: 20px;
+  color: var(--component-colors-components-buttons-tertiary-button-tertiary-fg);
+  display: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.textAndSupportingText {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  max-width: 100%;
+}
+.placeholderIcon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  min-height: 20px;
+}
+.text1 {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+}
+.textPadding {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xxs);
+}
+.placeholderIcon1 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  flex-shrink: 0;
+  min-height: 20px;
+}
+.button,
+.placeholderIcon1,
+.placeholderIcon2 {
+  overflow: hidden;
+  display: none;
+}
+.button {
+  align-self: stretch;
+  border-radius: var(--radius-md);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-sm);
+  gap: var(--spacing-xs);
+}
+.placeholderIcon2 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  flex-shrink: 0;
+  min-height: 20px;
+}
+.text2 {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+}
+.textPadding1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xxs);
+}
+.placeholderIcon3 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  flex-shrink: 0;
+  min-height: 20px;
+}
+.button1,
+.placeholderIcon3,
+.placeholderIcon4 {
+  overflow: hidden;
+  display: none;
+}
+.button1 {
+  align-self: stretch;
+  box-shadow: var(--shadows-shadow-xs);
+  border-radius: var(--radius-md);
+  background-color: var(--colors-background-bg-primary);
+  border: 1px solid
+    var(
+      --component-colors-components-buttons-secondary-color-button-secondary-color-border
+    );
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-smi);
+  gap: var(--spacing-xs);
+  color: var(
+    --component-colors-components-buttons-secondary-color-button-secondary-color-fg
+  );
+}
+.placeholderIcon4 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  flex-shrink: 0;
+  min-height: 20px;
+}
+.text3 {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+}
+.textPadding2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xxs);
+}
+.placeholderIcon5 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  min-height: 20px;
+}
+.button2 {
+  align-self: stretch;
+  box-shadow: var(--shadows-shadow-xs);
+  border-radius: var(--radius-md);
+  background-color: var(--colors-background-bg-primary);
+  border: 1px solid
+    var(--component-colors-components-buttons-secondary-button-secondary-border);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-smi);
+  gap: var(--spacing-xs);
+  color: var(
+    --component-colors-components-buttons-secondary-button-secondary-fg
+  );
+}
+.placeholderIcon6 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  min-height: 20px;
+}
+.text4 {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+}
+.textPadding3 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xxs);
+}
+.placeholderIcon7 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  min-height: 20px;
+}
+.actions,
+.button3 {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+}
+.button3 {
+  align-self: stretch;
+  box-shadow: var(--shadows-shadow-xs);
+  border-radius: var(--radius-md);
+  background-color: var(
+    --component-colors-components-buttons-primary-button-primary-bg
+  );
+  border: 1px solid
+    var(--component-colors-components-buttons-primary-button-primary-bg);
+  overflow: hidden;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-smi);
+  gap: var(--spacing-xs);
+  color: var(--colors-background-bg-primary);
+}
+.actions {
+  height: 40px;
+  justify-content: flex-start;
+  gap: var(--spacing-lg);
+  max-width: 100%;
+  font-size: var(--text-sm-semibold-size);
+  color: var(--component-colors-components-buttons-tertiary-button-tertiary-fg);
+}
+.dotsVerticalIcon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.content,
+.dropdown {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.dropdown {
+  display: none;
+  flex-direction: column;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-xl);
+}
+.content,
+.dividerIcon,
+.sectionHeader {
+  align-self: stretch;
+  max-width: 100%;
+}
+.dividerIcon {
+  position: relative;
+  overflow: hidden;
+  max-height: 100%;
+  display: none;
+  z-index: 0;
+}
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--spacing-2xl);
+  font-size: var(--text-lg-semibold-size);
+  color: var(--colors-text-text-primary-900);
+}
+.text5 {
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 39px;
+}
+.tabButtonBase,
+.tabButtonBase1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.tabButtonBase {
+  border-bottom: 2px solid
+    var(--component-colors-components-buttons-primary-button-primary-bg);
+  padding: 0 var(--spacing-xs) var(--padding-4xs);
+  color: var(
+    --component-colors-components-buttons-secondary-color-button-secondary-color-fg
+  );
+}
+.tabButtonBase1 {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  height: 32px;
+  flex: 1;
+  padding: 0 var(--spacing-xs) var(--spacing-lg);
+  box-sizing: border-box;
+  font-family: var(--text-sm-semibold);
+  font-weight: 600;
+  font-size: var(--text-sm-semibold-size);
+  color: var(--colors-text-text-quaternary-500);
+  min-width: 29px;
+}
+.text6 {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+}
+.tabButtonBase2 {
+  align-self: stretch;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-10xs) var(--spacing-lg);
+}
+.text7 {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.tabButtonBase3 {
+  align-self: stretch;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xs) var(--spacing-lg);
+}
+.text8 {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+}
+.tabButtonBase4 {
+  align-self: stretch;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xs) var(--spacing-lg);
+}
+.text9 {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+}
+.tabButtonBase5 {
+  align-self: stretch;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xs) var(--spacing-lg);
+}
+.text10 {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+}
+.tabButtonBase6 {
+  align-self: stretch;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xs) var(--spacing-lg);
+}
+.text11,
+.text12 {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+}
+.text12 {
+  line-height: 18px;
+  font-weight: 500;
+}
+.badge,
+.tabButtonBase7 {
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}
+.badge {
+  height: 22px;
+  border-radius: var(--radius-full);
+  background-color: var(--colors-background-bg-secondary);
+  border: 1px solid var(--colors-border-border-secondary);
+  display: flex;
+  justify-content: flex-start;
+  padding: var(--spacing-xxs) var(--padding-6xs);
+  text-align: center;
+  font-size: var(--text-xs-medium-size);
+  color: var(
+    --component-colors-components-buttons-secondary-button-secondary-fg
+  );
+}
+.tabButtonBase7 {
+  height: 32px;
+  display: none;
+  justify-content: center;
+  padding: 0 var(--spacing-xs) var(--spacing-lg);
+  gap: var(--spacing-md);
+}
+.text13 {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+}
+.tabButtonBase8 {
+  align-self: stretch;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xs) var(--spacing-lg);
+}
+.text14 {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+}
+.tabButtonBase9 {
+  align-self: stretch;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--spacing-xs) var(--spacing-lg);
+}
+.horizontalTabs,
+.tabs {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.tabs {
+  width: 108px;
+  flex-direction: row;
+  gap: var(--spacing-lg);
+}
+.horizontalTabs {
+  height: 40px;
+  width: 355px;
+  border-bottom: 1px solid var(--colors-border-border-secondary);
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: var(--padding-2xs) 0 0;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.placeholderIcon8 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  min-height: 20px;
+}
+.text15 {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+}
+.textPadding4 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xxs);
+}
+.button4,
+.placeholderIcon9 {
+  overflow: hidden;
+  display: none;
+}
+.placeholderIcon9 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  flex-shrink: 0;
+  min-height: 20px;
+}
+.button4 {
+  align-self: stretch;
+  border-radius: var(--radius-md);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-sm);
+  gap: var(--spacing-xs);
+}
+.placeholderIcon10 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  min-height: 20px;
+}
+.text16 {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+}
+.textPadding5 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xxs);
+}
+.placeholderIcon11 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  min-height: 20px;
+}
+.button5 {
+  align-self: stretch;
+  box-shadow: var(--shadows-shadow-xs);
+  border-radius: var(--radius-md);
+  background-color: var(--colors-background-bg-primary);
+  border: 1px solid
+    var(
+      --component-colors-components-buttons-secondary-color-button-secondary-color-border
+    );
+  overflow: hidden;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-smi);
+  gap: var(--spacing-xs);
+  color: var(
+    --component-colors-components-buttons-secondary-color-button-secondary-color-fg
+  );
+}
+.placeholderIcon12 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  min-height: 20px;
+}
+.text17 {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+}
+.textPadding6 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xxs);
+}
+.placeholderIcon13 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  min-height: 20px;
+}
+.button6 {
+  align-self: stretch;
+  box-shadow: var(--shadows-shadow-xs);
+  border-radius: var(--radius-md);
+  background-color: var(--colors-background-bg-primary);
+  border: 1px solid
+    var(--component-colors-components-buttons-secondary-button-secondary-border);
+  overflow: hidden;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-smi);
+  gap: var(--spacing-xs);
+  color: var(
+    --component-colors-components-buttons-secondary-button-secondary-fg
+  );
+}
+.placeholderIcon14 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  min-height: 20px;
+}
+.text18 {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+}
+.textPadding7 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xxs);
+}
+.placeholderIcon15 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  min-height: 20px;
+}
+.button7 {
+  align-self: stretch;
+  box-shadow: var(--shadows-shadow-xs);
+  border-radius: var(--radius-md);
+  background-color: var(
+    --component-colors-components-buttons-primary-button-primary-bg
+  );
+  border: 1px solid
+    var(--component-colors-components-buttons-primary-button-primary-bg);
+  overflow: hidden;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-smi);
+  gap: var(--spacing-xs);
+  color: var(--colors-background-bg-primary);
+}
+.plusCircleIcon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 20px;
+}
+.text19 {
+  position: relative;
+  font-size: var(--text-sm-semibold-size);
+  line-height: 20px;
+  font-weight: 600;
+  font-family: var(--text-sm-semibold);
+  color: var(
+    --component-colors-components-buttons-secondary-button-secondary-fg
+  );
+  text-align: left;
+  display: inline-block;
+  min-width: 81px;
+}
+.textPadding8 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xxs);
+}
+.placeholderIcon16 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  min-height: 20px;
+}
+.actions1,
+.button8 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.button8 {
+  cursor: pointer;
+  border: 1px solid
+    var(--component-colors-components-buttons-secondary-button-secondary-border);
+  padding: var(--padding-5xs) var(--padding-smi);
+  background-color: var(--colors-background-bg-primary);
+  box-shadow: var(--shadows-shadow-xs);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  justify-content: center;
+  gap: var(--spacing-xs);
+}
+.actions1 {
+  width: 214px;
+  justify-content: flex-start;
+  gap: var(--gap-sm);
+  flex-shrink: 0;
+  color: var(--component-colors-components-buttons-tertiary-button-tertiary-fg);
+}
+.dotsVerticalIcon1 {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.content1,
+.dropdown1 {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.dropdown1 {
+  display: none;
+  flex-direction: column;
+}
+.content1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  box-sizing: border-box;
+  gap: var(--spacing-xl);
+  max-width: 100%;
+}
+.text20 {
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 42px;
+}
+.textPadding9 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xxs);
+  color: var(
+    --component-colors-components-buttons-secondary-button-secondary-fg
+  );
+}
+.dividerIcon1,
+.placeholderIcon17 {
+  width: 177px;
+  height: 1px;
+  position: relative;
+  display: none;
+}
+.placeholderIcon17 {
+  height: 20px;
+  width: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 20px;
+}
+.text21 {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.placeholderIcon18 {
+  width: 20px;
+  position: relative;
+  flex-shrink: 0;
+  min-height: 20px;
+}
+.buttonsbutton,
+.placeholderIcon18,
+.placeholderIcon19 {
+  height: 20px;
+  overflow: hidden;
+  display: none;
+}
+.buttonsbutton {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+}
+.placeholderIcon19 {
+  width: 20px;
+  position: relative;
+  flex-shrink: 0;
+  min-height: 20px;
+}
+.text22 {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+}
+.textPadding10 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xxs);
+}
+.placeholderIcon20 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  min-height: 20px;
+}
+.button9 {
+  align-self: stretch;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-sm);
+  gap: var(--spacing-xs);
+}
+.magicWand02Icon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 20px;
+}
+.text23 {
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 14px;
+}
+.textPadding11 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xxs);
+}
+.placeholderIcon21 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  min-height: 20px;
+}
+.button10 {
+  box-shadow: var(--shadows-shadow-xs);
+  border-radius: var(--radius-md);
+  background-color: var(--colors-background-bg-primary);
+  border: 1px solid
+    var(--component-colors-components-buttons-secondary-button-secondary-border);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xs) var(--padding-47xl);
+  gap: var(--gap-9xs);
+  color: var(
+    --component-colors-components-buttons-secondary-button-secondary-fg
+  );
+}
+.placeholderIcon22 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  min-height: 20px;
+}
+.text24 {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+}
+.textPadding12 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xxs);
+}
+.placeholderIcon23 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  min-height: 20px;
+}
+.button11 {
+  align-self: stretch;
+  box-shadow: var(--shadows-shadow-xs);
+  border-radius: var(--radius-md);
+  background-color: var(
+    --component-colors-components-buttons-primary-button-primary-bg
+  );
+  border: 1px solid
+    var(--component-colors-components-buttons-primary-button-primary-bg);
+  overflow: hidden;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-smi);
+  gap: var(--spacing-xs);
+  color: var(--colors-background-bg-primary);
+}
+.actions2,
+.content2,
+.sectionFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--spacing-lg);
+}
+.content2,
+.sectionFooter {
+  gap: var(--gap-4xl);
+}
+.sectionFooter {
+  align-self: stretch;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  gap: var(--gap-4xs);
+  color: var(--component-colors-components-buttons-tertiary-button-tertiary-fg);
+}
+.text25 {
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 56px;
+}
+.textPadding13 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xxs);
+  color: var(
+    --component-colors-components-buttons-secondary-button-secondary-fg
+  );
+}
+.container,
+.content3,
+.section {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.content3 {
+  width: 507px;
+  overflow-x: auto;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: var(--gap-11xl);
+}
+.container,
+.section {
+  flex-direction: column;
+}
+.container {
+  align-self: stretch;
+  align-items: flex-start;
+  padding: 0 var(--container-padding-desktop);
+  gap: var(--gap-4xs);
+}
+.section {
+  flex: 1;
+  align-items: center;
+  padding: var(--padding-13xl) 0;
+  min-width: 480px;
+  margin-left: -2px;
+  text-align: left;
+  font-size: var(--text-sm-semibold-size);
+  color: var(--colors-text-text-quaternary-500);
+  font-family: var(--text-sm-semibold);
+}
+@media screen and (max-width: 800px) {
+  .section {
+    padding-bottom: var(--padding-2xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 675px) {
+  .content1 {
+    flex-wrap: wrap;
+  }
+  .section {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section {
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

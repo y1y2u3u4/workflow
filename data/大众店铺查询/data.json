@@ -1,0 +1,99 @@
+[
+    {
+        "url": "https://www.baidu.com/",
+        "time": "2024-06-16T03:08:24.019Z",
+        "type": "navigation"
+    },
+    {
+        "url": "https://www.google.com/search?q=%E6%9B%B4%E5%A4%9A%E6%8E%A8%E8%8D%90%E8%8F%9C%E5%9B%BE%E7%89%87&oq=%E6%9B%B4%E5%A4%9A%E6%8E%A8%E8%8D%90%E8%8F%9C%E5%9B%BE%E7%89%87&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBjYzajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8",
+        "time": "2024-06-16T03:08:32.718Z",
+        "type": "navigation"
+    },
+    {
+        "url": "https://www.dianping.com/",
+        "time": "2024-06-16T03:08:43.595Z",
+        "type": "navigation"
+    },
+    {
+        "url": "https://www.dianping.com/citylist",
+        "time": "2024-06-16T03:08:50.422Z",
+        "type": "navigation"
+    },
+    {
+        "element": {
+            "tagName": "A",
+            "id": "",
+            "className": "link onecity",
+            "name": "",
+            "innerText": "长沙"
+        },
+        "time": "2024-06-16T03:08:55.448Z",
+        "type": "click"
+    },
+    {
+        "url": "https://www.dianping.com/changsha",
+        "time": "2024-06-16T03:08:55.777Z",
+        "type": "navigation"
+    },
+    {
+        "element": {
+            "tagName": "INPUT",
+            "id": "J-search-input",
+            "className": "J-search-input",
+            "name": "",
+            "innerText": "",
+            "placeholder": "搜索商户名、地址、菜名、外卖等",
+            "value": "巴斯跃动少儿成长中心（五江店）",
+            "label": ""
+        },
+        "value": "巴斯跃动少儿成长中心（五江店）",
+        "time": "2024-06-16T03:09:04.388Z",
+        "type": "input"
+    },
+    {
+        "action": "scroll",
+        "direction": "up",
+        "distance": 106,
+        "time": "2024-06-16T03:09:41.968Z",
+        "type": "scroll"
+    },
+    {
+        "element": {
+            "tagName": "DIV",
+            "id": "",
+            "className": "phone",
+            "innerText": "咨询电话： 138****1780 查看完整号码\n "
+        },
+        "time": "2024-06-16T03:09:45.983Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "A",
+            "id": "",
+            "className": "J-phone",
+            "name": "",
+            "innerText": "查看完整号码"
+        },
+        "time": "2024-06-16T03:09:58.576Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "A",
+            "id": "",
+            "className": "view-more J_view-more",
+            "name": "",
+            "innerText": "收起 "
+        },
+        "time": "2024-06-16T03:10:01.713Z",
+        "type": "click"
+    },
+    {
+        "action": "scroll",
+        "direction": "down",
+        "distance": 101,
+        "time": "2024-06-16T03:10:02.638Z",
+        "type": "scroll"
+    }
+]

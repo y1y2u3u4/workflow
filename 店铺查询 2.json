@@ -1,0 +1,341 @@
+{
+  "clicks": [
+    {
+      "element": {
+        "tagName": "A",
+        "id": "",
+        "className": "link onecity",
+        "name": "",
+        "innerText": "长沙"
+      },
+      "time": "2024-06-16T03:08:55.448Z"
+    },
+    {
+      "element": {
+        "tagName": "DIV",
+        "id": "",
+        "className": "phone",
+        "innerText": "咨询电话： 138****1780 查看完整号码\n "
+      },
+      "time": "2024-06-16T03:09:45.983Z"
+    },
+    {
+      "element": {
+        "tagName": "A",
+        "id": "",
+        "className": "J-phone",
+        "name": "",
+        "innerText": "查看完整号码"
+      },
+      "time": "2024-06-16T03:09:46.677Z"
+    },
+    {
+      "element": {
+        "tagName": "A",
+        "id": "",
+        "className": "J-phone",
+        "name": "",
+        "innerText": "查看完整号码"
+      },
+      "time": "2024-06-16T03:09:58.576Z"
+    },
+    {
+      "element": {
+        "tagName": "A",
+        "id": "",
+        "className": "view-more J_view-more",
+        "name": "",
+        "innerText": "收起 "
+      },
+      "time": "2024-06-16T03:10:01.713Z"
+    }
+  ],
+  "navigations": [
+    {
+      "url": "https://www.baidu.com/",
+      "time": "2024-06-16T03:08:24.019Z"
+    },
+    {
+      "url": "https://www.google.com/search?q=%E6%9B%B4%E5%A4%9A%E6%8E%A8%E8%8D%90%E8%8F%9C%E5%9B%BE%E7%89%87&oq=%E6%9B%B4%E5%A4%9A%E6%8E%A8%E8%8D%90%E8%8F%9C%E5%9B%BE%E7%89%87&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBjYzajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8",
+      "time": "2024-06-16T03:08:30.611Z"
+    },
+    {
+      "url": "https://www.google.com/search?q=%E6%9B%B4%E5%A4%9A%E6%8E%A8%E8%8D%90%E8%8F%9C%E5%9B%BE%E7%89%87&oq=%E6%9B%B4%E5%A4%9A%E6%8E%A8%E8%8D%90%E8%8F%9C%E5%9B%BE%E7%89%87&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBjYzajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8",
+      "time": "2024-06-16T03:08:31.715Z"
+    },
+    {
+      "url": "https://www.google.com/search?q=%E6%9B%B4%E5%A4%9A%E6%8E%A8%E8%8D%90%E8%8F%9C%E5%9B%BE%E7%89%87&oq=%E6%9B%B4%E5%A4%9A%E6%8E%A8%E8%8D%90%E8%8F%9C%E5%9B%BE%E7%89%87&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBjYzajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8",
+      "time": "2024-06-16T03:08:32.718Z"
+    },
+    {
+      "url": "https://www.dianping.com/",
+      "time": "2024-06-16T03:08:43.595Z"
+    },
+    {
+      "url": "https://www.dianping.com/citylist",
+      "time": "2024-06-16T03:08:50.422Z"
+    },
+    {
+      "url": "https://www.dianping.com/changsha",
+      "time": "2024-06-16T03:08:55.777Z"
+    }
+  ],
+  "inputs": [
+    {
+      "element": {
+        "tagName": "INPUT",
+        "id": "J-search-input",
+        "className": "J-search-input",
+        "name": "",
+        "innerText": "",
+        "placeholder": "搜索商户名、地址、菜名、外卖等",
+        "value": "巴斯跃动少儿成长中心（五江店）",
+        "label": ""
+      },
+      "value": "巴斯跃动少儿成长中心（五江店）",
+      "time": "2024-06-16T03:09:04.388Z"
+    }
+  ],
+  "scrolls": [
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 103,
+      "time": "2024-06-16T03:08:54.075Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 109,
+      "time": "2024-06-16T03:09:35.769Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 103,
+      "time": "2024-06-16T03:09:35.985Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 106,
+      "time": "2024-06-16T03:09:36.223Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 107,
+      "time": "2024-06-16T03:09:37.387Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 111,
+      "time": "2024-06-16T03:09:39.219Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 114,
+      "time": "2024-06-16T03:09:39.371Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 101,
+      "time": "2024-06-16T03:09:39.553Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 102,
+      "time": "2024-06-16T03:09:40.286Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 117,
+      "time": "2024-06-16T03:09:40.352Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 133,
+      "time": "2024-06-16T03:09:40.402Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 143,
+      "time": "2024-06-16T03:09:40.452Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 144,
+      "time": "2024-06-16T03:09:40.502Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 127,
+      "time": "2024-06-16T03:09:41.152Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 183,
+      "time": "2024-06-16T03:09:41.202Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 129,
+      "time": "2024-06-16T03:09:41.236Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 123,
+      "time": "2024-06-16T03:09:41.286Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 125,
+      "time": "2024-06-16T03:09:41.302Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "up",
+      "distance": 208,
+      "time": "2024-06-16T03:09:41.768Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "up",
+      "distance": 305,
+      "time": "2024-06-16T03:09:41.785Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "up",
+      "distance": 182,
+      "time": "2024-06-16T03:09:41.801Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "up",
+      "distance": 173,
+      "time": "2024-06-16T03:09:41.818Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "up",
+      "distance": 163,
+      "time": "2024-06-16T03:09:41.834Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "up",
+      "distance": 154,
+      "time": "2024-06-16T03:09:41.851Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "up",
+      "distance": 146,
+      "time": "2024-06-16T03:09:41.868Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "up",
+      "distance": 132,
+      "time": "2024-06-16T03:09:41.884Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "up",
+      "distance": 125,
+      "time": "2024-06-16T03:09:41.901Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "up",
+      "distance": 120,
+      "time": "2024-06-16T03:09:41.918Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "up",
+      "distance": 227,
+      "time": "2024-06-16T03:09:41.951Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "up",
+      "distance": 106,
+      "time": "2024-06-16T03:09:41.968Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 102,
+      "time": "2024-06-16T03:09:59.102Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 115,
+      "time": "2024-06-16T03:09:59.219Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 107,
+      "time": "2024-06-16T03:09:59.285Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 112,
+      "time": "2024-06-16T03:09:59.501Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 101,
+      "time": "2024-06-16T03:10:00.084Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 122,
+      "time": "2024-06-16T03:10:02.422Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 106,
+      "time": "2024-06-16T03:10:02.536Z"
+    },
+    {
+      "action": "scroll",
+      "direction": "down",
+      "distance": 101,
+      "time": "2024-06-16T03:10:02.638Z"
+    }
+  ],
+  "keydowns": [
+    {
+      "key": "Meta",
+      "code": "MetaLeft",
+      "time": "2024-06-16T03:09:04.246Z"
+    },
+    {
+      "key": "v",
+      "code": "KeyV",
+      "time": "2024-06-16T03:09:04.354Z"
+    }
+  ]
+}

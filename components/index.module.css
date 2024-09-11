@@ -1,0 +1,560 @@
+.homeLineIcon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.breadcrumbButtonBase {
+  border-radius: var(--spacing-sm);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--spacing-xs);
+}
+.chevronRightIcon {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.text {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  font-size: var(--text-sm-semibold-size);
+  line-height: 20px;
+  font-weight: 500;
+  font-family: var(--text-sm-semibold);
+  color: var(--component-colors-components-buttons-tertiary-button-tertiary-fg);
+  text-align: left;
+}
+.breadcrumbButtonBase1 {
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--spacing-sm);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xs) var(--spacing-md);
+}
+.chevronRightIcon1 {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.text1 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--text-sm-semibold-size);
+  line-height: 20px;
+  font-weight: 500;
+  font-family: var(--text-sm-semibold);
+  color: var(--component-colors-components-buttons-tertiary-button-tertiary-fg);
+  text-align: left;
+}
+.breadcrumbButtonBase2 {
+  align-self: stretch;
+  border-radius: var(--spacing-sm);
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xs) var(--spacing-md);
+}
+.chevronRightIcon2 {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.text2 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--text-sm-semibold-size);
+  line-height: 20px;
+  font-weight: 500;
+  font-family: var(--text-sm-semibold);
+  color: var(--component-colors-components-buttons-tertiary-button-tertiary-fg);
+  text-align: left;
+  white-space: nowrap;
+}
+.breadcrumbButtonBase3 {
+  align-self: stretch;
+  border-radius: var(--radius-sm);
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xs) var(--spacing-md);
+}
+.chevronRightIcon3 {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.text3 {
+  position: relative;
+  font-size: var(--text-sm-semibold-size);
+  line-height: 20px;
+  font-weight: 600;
+  font-family: var(--text-sm-semibold);
+  color: var(
+    --component-colors-components-buttons-secondary-button-secondary-fg
+  );
+  text-align: left;
+}
+.breadcrumbButtonBase4 {
+  border-radius: var(--spacing-sm);
+  background-color: var(--colors-background-bg-secondary);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xs) var(--spacing-md);
+}
+.breadcrumbs,
+.tabs {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.tabs {
+  height: 28px;
+  flex: 1;
+  display: flex;
+  gap: var(--spacing-md);
+}
+.breadcrumbs {
+  width: 278px;
+  display: none;
+  padding: 0 var(--padding-5xl) 0 0;
+  box-sizing: border-box;
+}
+.supportingText,
+.text4 {
+  position: relative;
+  font-family: var(--text-sm-semibold);
+  text-align: left;
+}
+.text4 {
+  margin: 0;
+  align-self: stretch;
+  font-size: var(--display-sm-semibold-size);
+  line-height: 38px;
+  font-weight: 600;
+  color: var(--colors-text-text-primary-900);
+}
+.supportingText {
+  width: 445px;
+  height: 48px;
+  font-size: var(--font-size-base);
+  line-height: 24px;
+  color: var(--component-colors-components-buttons-tertiary-button-tertiary-fg);
+  display: none;
+  max-width: 100%;
+}
+.textAndSupportingText {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--spacing-xs);
+  min-width: 320px;
+  max-width: 100%;
+}
+.placeholderIcon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  min-height: 20px;
+}
+.text5 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--text-sm-semibold-size);
+  line-height: 20px;
+  font-weight: 600;
+  font-family: var(--text-sm-semibold);
+  color: var(--component-colors-components-buttons-tertiary-button-tertiary-fg);
+  text-align: left;
+}
+.textPadding {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xxs);
+}
+.placeholderIcon1 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  flex-shrink: 0;
+  min-height: 20px;
+}
+.button,
+.placeholderIcon1,
+.placeholderIcon2 {
+  overflow: hidden;
+  display: none;
+}
+.button {
+  align-self: stretch;
+  border-radius: var(--radius-md);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-sm);
+  gap: var(--spacing-xs);
+}
+.placeholderIcon2 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  flex-shrink: 0;
+  min-height: 20px;
+}
+.text6 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--text-sm-semibold-size);
+  line-height: 20px;
+  font-weight: 600;
+  font-family: var(--text-sm-semibold);
+  color: var(
+    --component-colors-components-buttons-secondary-color-button-secondary-color-fg
+  );
+  text-align: left;
+}
+.textPadding1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xxs);
+}
+.button1,
+.placeholderIcon3 {
+  overflow: hidden;
+  display: none;
+}
+.placeholderIcon3 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  flex-shrink: 0;
+  min-height: 20px;
+}
+.button1 {
+  align-self: stretch;
+  box-shadow: var(--shadows-shadow-xs);
+  border-radius: var(--radius-md);
+  background-color: var(--colors-background-bg-primary);
+  border: 1px solid
+    var(
+      --component-colors-components-buttons-secondary-color-button-secondary-color-border
+    );
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-smi);
+  gap: var(--spacing-xs);
+}
+.uploadCloud01Icon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 20px;
+}
+.text7 {
+  position: relative;
+  font-size: var(--text-sm-semibold-size);
+  line-height: 20px;
+  font-weight: 600;
+  font-family: var(--text-sm-semibold);
+  color: var(
+    --component-colors-components-buttons-secondary-button-secondary-fg
+  );
+  text-align: left;
+  display: inline-block;
+  min-width: 88px;
+}
+.textPadding2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xxs);
+}
+.placeholderIcon4 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  min-height: 20px;
+}
+.button2 {
+  cursor: pointer;
+  border: 1px solid
+    var(--component-colors-components-buttons-secondary-button-secondary-border);
+  padding: var(--padding-5xs) var(--padding-smi);
+  background-color: var(--colors-background-bg-primary);
+  box-shadow: var(--shadows-shadow-xs);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+}
+.download04Icon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 20px;
+}
+.text8 {
+  position: relative;
+  font-size: var(--text-sm-semibold-size);
+  line-height: 20px;
+  font-weight: 600;
+  font-family: var(--text-sm-semibold);
+  color: var(--colors-background-bg-primary);
+  text-align: left;
+  display: inline-block;
+  min-width: 107px;
+}
+.textPadding3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xxs);
+}
+.placeholderIcon5 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  min-height: 20px;
+}
+.actions,
+.button3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.button3 {
+  cursor: pointer;
+  border: 1px solid
+    var(--component-colors-components-buttons-primary-button-primary-bg);
+  padding: var(--padding-5xs) var(--padding-smi);
+  background-color: var(
+    --component-colors-components-buttons-primary-button-primary-bg
+  );
+  box-shadow: var(--shadows-shadow-xs);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  justify-content: center;
+  gap: var(--spacing-xs);
+}
+.actions {
+  justify-content: flex-start;
+  gap: var(--spacing-lg);
+}
+.label {
+  width: 47px;
+  position: relative;
+  font-size: var(--text-sm-semibold-size);
+  line-height: 20px;
+  font-weight: 500;
+  font-family: var(--text-sm-semibold);
+  color: var(
+    --component-colors-components-buttons-secondary-button-secondary-fg
+  );
+  text-align: left;
+  display: none;
+}
+.searchLgIcon,
+.text9 {
+  position: relative;
+  overflow: hidden;
+}
+.searchLgIcon {
+  height: 20px;
+  width: 20px;
+  flex-shrink: 0;
+}
+.text9 {
+  align-self: stretch;
+  flex: 1;
+  font-size: var(--font-size-base);
+  line-height: 24px;
+  font-family: var(--text-sm-semibold);
+  color: var(--colors-text-text-quaternary-500);
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content1 {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+.content1,
+.input,
+.inputWithLabel {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+.input {
+  box-shadow: var(--shadows-shadow-xs);
+  border-radius: var(--radius-md);
+  background-color: var(--colors-background-bg-primary);
+  border: 1px solid
+    var(--component-colors-components-buttons-secondary-button-secondary-border);
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-3xs) var(--padding-smi);
+}
+.inputWithLabel {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+}
+.hintText {
+  align-self: stretch;
+  height: 20px;
+  position: relative;
+  font-size: var(--text-sm-semibold-size);
+  line-height: 20px;
+  font-family: var(--text-sm-semibold);
+  color: var(--component-colors-components-buttons-tertiary-button-tertiary-fg);
+  text-align: left;
+  display: none;
+}
+.inputDropdown {
+  height: 44px;
+  width: 320px;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--spacing-md);
+  min-width: 200px;
+  max-width: var(--width-xxs);
+}
+.content,
+.dividerIcon {
+  align-self: stretch;
+  max-width: 100%;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-11xs) 0 0;
+  box-sizing: border-box;
+  gap: 20px 14px;
+}
+.dividerIcon {
+  position: relative;
+  overflow: hidden;
+  max-height: 100%;
+  display: none;
+}
+.container,
+.pageHeader {
+  align-self: stretch;
+  flex-direction: column;
+}
+.pageHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--spacing-2xl);
+  max-width: 100%;
+}
+.container {
+  padding: 0 var(--container-padding-desktop);
+  box-sizing: border-box;
+}
+.container,
+.headerSection,
+.main,
+.splitSection {
+  max-width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.headerSection {
+  align-self: stretch;
+  flex-direction: column;
+}
+.main,
+.splitSection {
+  box-sizing: border-box;
+}
+.splitSection {
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 var(--padding-11xs) 0 0;
+}
+.main {
+  margin: 0;
+  width: 1128px;
+  background-color: var(--colors-background-bg-primary);
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-13xl) 0 48px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 800px) {
+  .text4 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .text4 {
+    font-size: var(--text-lg-semibold-size);
+    line-height: 23px;
+  }
+  .actions {
+    flex-wrap: wrap;
+  }
+}

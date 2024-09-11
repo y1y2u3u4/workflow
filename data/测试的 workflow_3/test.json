@@ -1,0 +1,19 @@
+{
+    "items": [
+        {
+            "attributes": [
+                {
+                    "complex_id": 100002,
+                    "id": 21845,
+                    "values": [
+                        {
+                            "dictionary_value_id": 0,
+                            "value": "https://test-zhanggongqing-001.s3.amazonaws.com/f4b97562-ea93-4fc7-8493-a2adf6ae0967.mp4?AWSAccessKeyId=AKIAZ3OF3AHC5G2GZ5E3&Signature=sFyX76%2FckCNT3pidPLRvC5B6a1g%3D&Expires=1724242834"
+                        }
+                    ]
+                }
+            ],
+            "offer_id": "1301794073-hx6u"
+        }
+    ]
+}

@@ -1,0 +1,110 @@
+[
+    {
+        "url": "https://www.baidu.com/",
+        "time": "2024-06-16T03:08:24.019Z",
+        "type": "navigation"
+    },
+    {
+        "url": "https://www.dianping.com/",
+        "time": "2024-06-16T03:08:43.595Z",
+        "type": "navigation"
+    },
+    {
+        "url": "https://www.dianping.com/citylist",
+        "time": "2024-06-16T03:08:50.422Z",
+        "type": "navigation"
+    },
+    {
+        "element": {
+            "tagName": "A",
+            "id": "",
+            "className": "link onecity",
+            "name": "",
+            "innerText": "北京"
+        },
+        "value": "北京",
+        "time": "2024-06-16T03:08:55.448Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "INPUT",
+            "id": "J-search-input",
+            "className": "J-search-input",
+            "name": "",
+            "innerText": "",
+            "placeholder": "搜索商户名、地址、菜名、外卖等",
+            "value": "name",
+            "label": ""
+        },
+        "value": "name",
+        "time": "2024-06-16T03:09:04.388Z",
+        "type": "input"
+    },
+    {
+        "element": {
+            "tagName": "A",
+            "id": "J-all-btn",
+            "className": "search-btn J-search-btn",
+            "name": "",
+            "innerText": "搜索"
+        },
+        "time": "2024-06-16T03:09:10.388Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "",
+            "id": "",
+            "className": "a[data-click-name='shop_title_click']",
+            "name": "",
+            "innerText": ""
+        },
+        "time": "2024-06-16T03:09:20.388Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "",
+            "id": "",
+            "className": "J-phone",
+            "name": "",
+            "innerText": "查看完整号码"
+        },
+        "time": "2024-06-16T03:09:58.576Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "",
+            "id": "",
+            "className": "",
+            "name": "",
+            "innerText": "",
+            "leixing": "自定义1"
+
+        },
+        "time": "2024-06-16T03:10:01.713Z",
+        "type": "output"
+    },
+    {
+        "element": {
+            "tagName": "",
+            "id": "",
+            "className": "block-link",
+            "name": "",
+            "innerText": ""
+        },
+        "time": "2024-06-16T03:10:10.713Z",
+        "type": "click"
+    },
+    {
+        "action": "scroll",
+        "direction": "down",
+        "distance": 500,
+        "time": "2024-06-16T03:10:15.638Z",
+        "type": "scroll"
+    }
+]
+
+
