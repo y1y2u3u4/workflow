@@ -6,7 +6,16 @@ import { exec } from 'child_process';
 import { downloadAndUploadvideo, getSignedUrl } from "@/lib/s3";
 const { CloudTasksClient } = require('@google-cloud/tasks');
 
-const client = new CloudTasksClient();
+import { GoogleAuth } from 'google-auth-library';
+
+// 在函数开始时添加以下代码
+const auth = new GoogleAuth({
+    credentials: JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON)
+});
+
+// 使用这个 auth 实例创建 CloudTasksClient
+const client = new CloudTasksClient({ auth });
+
 
 export default async function handler(req, res) {
     // TODO(developer): Uncomment these lines and replace with your values.
