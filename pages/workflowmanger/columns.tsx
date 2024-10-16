@@ -144,6 +144,9 @@ const ActionsCell = ({ row, table }: { row: any, table: any }) => {
     const [selectedValue_1, setSelectedValue_1] = useState('');
     const [selectedValue_2, setSelectedValue_2] = useState('');
     const [num, setNum] = useState(1);
+    
+
+
     function getSelectedData() {
         // 获取表格的所有行
         // 这个方法取决于你正在使用的表格库
@@ -175,14 +178,13 @@ const ActionsCell = ({ row, table }: { row: any, table: any }) => {
         setSelectedValue_2(value);
     };
 
-
-    
-    const processRow = async (sortedData:any,row: any) => {
+    const processRow = async (sortedData:any,row: any,adsPowerUserId:any,url:any) => {
         try {
             console.log('Processing row:', row);
             console.log('Processing row_name:', row.name);
 
-            const { runoutput, runresult } = await fetchWsEndpoint(sortedData,row);
+
+            const { runoutput, runresult } = await fetchWsEndpoint(sortedData,row,adsPowerUserId,url);
             console.log('runoutput:', runoutput);
             console.log('runresult:', runresult);
             return { ...row, output: runoutput, status: runresult };
@@ -220,13 +222,41 @@ const ActionsCell = ({ row, table }: { row: any, table: any }) => {
 
     async function processRows(sortedData: any, dataObjects: string | any[], start: number, step: number) {
         const processedData = [];
+        //构建 5 个adsPowerUserId并且在使用的时候依次使用
+        // const adsPowerUserIds = ['kn8o287', 'knibk1e', 'knibk1h', 'knibk1k', 'knibk1k'];
+        const adsPowerUserIds = ['kn8o287'];
+        const urls = [
+            // 'https://test1-container-omqcnm4zaq-uc.a.run.app/scrape/',
+            'https://test1-container-001-omqcnm4zaq-uc.a.run.app/scrape/',
+            'https://test1-container-002-omqcnm4zaq-uc.a.run.app/scrape/',
+            'https://test1-container-003-omqcnm4zaq-uc.a.run.app/scrape/',
+            'https://test1-container-004-omqcnm4zaq-uc.a.run.app/scrape/',
+            'https://test1-container-005-omqcnm4zaq-uc.a.run.app/scrape/',
+            'https://test1-container-006-omqcnm4zaq-uc.a.run.app/scrape/',
+            'https://test1-container-007-omqcnm4zaq-uc.a.run.app/scrape/',
+            'https://test1-container-008-omqcnm4zaq-uc.a.run.app/scrape/',
+            'https://test1-container-009-omqcnm4zaq-uc.a.run.app/scrape/',
+            'https://test1-container-010-omqcnm4zaq-uc.a.run.app/scrape/',
+            'https://test1-container-011-omqcnm4zaq-uc.a.run.app/scrape/',
+            'https://test1-container-012-omqcnm4zaq-uc.a.run.app/scrape/',
+            'https://test1-container-013-omqcnm4zaq-uc.a.run.app/scrape/',
+            'https://test1-container-014-omqcnm4zaq-uc.a.run.app/scrape/',
+            'https://test1-container-015-omqcnm4zaq-uc.a.run.app/scrape/',
+            'https://test1-container-016-omqcnm4zaq-uc.a.run.app/scrape/',
+            'https://test1-container-017-omqcnm4zaq-uc.a.run.app/scrape/',
+            'https://test1-container-018-omqcnm4zaq-uc.a.run.app/scrape/',
+            'https://test1-container-019-omqcnm4zaq-uc.a.run.app/scrape/',
+        ];
 
         // for (let i = start; i < dataObjects.length; i += step) {
         for (let i = start; i < dataObjects.length; i += step) {
             const row = dataObjects[i];
-            
+            const adsPowerUserId = adsPowerUserIds[i % adsPowerUserIds.length];
+            const url = urls[i % urls.length];
             try {
-                const processedRow = await processRow(sortedData, row);
+                console.log('adsPowerUserId:', adsPowerUserId);
+                await new Promise(resolve => setTimeout(resolve, 5000));
+                const processedRow = await processRow(sortedData, row, adsPowerUserId,url);
                 console.log('processedRow:', processedRow);
                 processedData.push(processedRow);
             } catch (error) {
@@ -263,26 +293,36 @@ const ActionsCell = ({ row, table }: { row: any, table: any }) => {
 
 
 
-    const fetchWsEndpoint = async (sortedData:any,row: any) => {
+
+    const fetchWsEndpoint = async (sortedData:any,row: any,adsPowerUserId:any,url:any) => {
         let runoutput;
         let runresult;
+        const task_name = `${row.task_name}`
         try {
-            const res = await fetch('/api/CreateTask_1', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ sortedData, row, selectedValue_1, selectedValue_2 })
-            });
-            // http://localhost:8082
-            // https://test1-container-omqcnm4zaq-uc.a.run.app
-            // const res = await fetch('https://test1-container-omqcnm4zaq-uc.a.run.app/scrape', {
+            // http://localhost:8082/scrape
+            // https://test1-container-omqcnm4zaq-uc.a.run.app/scrape
+            // https://test1-container-1-omqcnm4zaq-uc.a.run.app/scrape
+            // /api/CreateTask_1
+            // /api/CreateTask_4
+            // /api/CreateTask_5
+            // /api/CreateTask_6
+            // /api/CreateTask_scheduler
+            const leixing=selectedValue_2
+            // const res = await fetch('/api/CreateTask_6', {
             //     method: 'POST',
             //     headers: {
             //         'Content-Type': 'application/json'
             //     },
-            //     body: JSON.stringify({ sortedData, row, task_name:"批量刊登" })
+            //     body: JSON.stringify({ sortedData, row, task_name, leixing, adsPowerUserId,url })
             // });
+            const res = await fetch('http://localhost:8082/scrape', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ sortedData, row, task_name, leixing, adsPowerUserId })
+            });
+
             const reader = res.body?.getReader();
             const decoder = new TextDecoder('utf-8');
             let result = '';
@@ -434,7 +474,6 @@ const ActionsCell = ({ row, table }: { row: any, table: any }) => {
     };
 
 
-
     const getData_baidu = async (keywords: string) => {
         try {
             const res = await fetch('/api/getData_baidu', {
@@ -483,10 +522,12 @@ const ActionsCell = ({ row, table }: { row: any, table: any }) => {
             const result=await fetchData(cellValue)
             const processedData = await processDataObjects(num,result.jsonObject, result.excelData);
             console.log('Processed Data_f:', processedData);
-            await Renewaldata(cellValue, processedData);
+            // await Renewaldata(cellValue, processedData);
         }
        
     };
+
+
     useEffect(() => {
         console.log("isOpen:", isOpen);
     }, [isOpen]); // 当 isOpen 状态发生变化时执行
@@ -534,14 +575,14 @@ const ActionsCell = ({ row, table }: { row: any, table: any }) => {
                             </Select>
                         </div>
                         <div className="flex flex-col space-y-1.5">
-                            <Label htmlFor="framework">是否重跑</Label>
+                            <Label htmlFor="framework">任务类型</Label>
                             <Select onValueChange={handleValueChange_2}>
                                 <SelectTrigger id="framework">
                                     <SelectValue placeholder="Select" />
                                 </SelectTrigger>
                                 <SelectContent position="popper">
-                                    <SelectItem value="true">是</SelectItem>
-                                    <SelectItem value="false">否</SelectItem>
+                                    <SelectItem value="RPA">RPA</SelectItem>
+                                    <SelectItem value="爬虫">爬虫</SelectItem>
                                 </SelectContent>
                             </Select>
                         </div>

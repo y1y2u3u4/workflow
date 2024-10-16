@@ -1,0 +1,63 @@
+[
+    {
+        "url": "https://www.amazon.com/",
+        "time": "2024-09-13T17:00:52.359Z",
+        "type": "navigation"
+    },
+
+    {
+        "element": {
+            "tagName": "INPUT",
+            "id": "twotabsearchtextbox",
+            "className": "",
+            "name": "",
+            "innerText": "",
+            "placeholder": "",
+            "value": "关键词",
+            "leixing": "自定义4"
+        },
+        "value": "关键词",
+        "time": "2024-09-13T17:00:53.252Z",
+        "type": "click"
+    },
+    {
+        "action": "scroll",
+        "direction": "down",
+        "distance": 3000,
+        "time": "2024-09-13T17:00:54.252Z",
+        "type": "scroll"
+    },
+    {
+        "action": "scroll",
+        "direction": "down",
+        "distance": 3000,
+        "time": "2024-09-13T17:00:55.252Z",
+        "type": "scroll"
+    },
+    {
+        "action": "scroll",
+        "direction": "down",
+        "distance": 3000,
+        "time": "2024-09-13T17:00:56.252Z",
+        "type": "scroll"
+    },
+    {
+        "action": "scroll",
+        "direction": "down",
+        "distance": 3000,
+        "time": "2024-09-13T17:00:57.252Z",
+        "type": "scroll"
+    },
+    {
+        "element": {
+            "tagName": "",
+            "id": "",
+            "className": "",
+            "name": "",
+            "innerText": "",
+            "leixing": "自定义4"
+        },
+        "time": "2024-09-13T17:01:00.252Z",
+        "type": "output"
+    }
+]

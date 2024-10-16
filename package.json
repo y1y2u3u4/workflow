@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
+    "@google-cloud/scheduler": "^4.3.0",
     "@google-cloud/tasks": "^5.5.0",
     "@mui/material": "^5.13.4",
     "@mui/x-date-pickers": "^6.7.0",

@@ -1,10 +1,5 @@
 [
     {
-        "url": "https://www.baidu.com/",
-        "time": "2024-06-16T03:08:24.019Z",
-        "type": "navigation"
-    },
-    {
         "url": "https://www.dianping.com/",
         "time": "2024-06-16T03:08:43.595Z",
         "type": "navigation"
@@ -20,9 +15,9 @@
             "id": "",
             "className": "link onecity",
             "name": "",
-            "innerText": "北京"
+            "innerText": "城市"
         },
-        "value": "北京",
+        "value": "城市",
         "time": "2024-06-16T03:08:55.448Z",
         "type": "click"
     },
@@ -34,10 +29,10 @@
             "name": "",
             "innerText": "",
             "placeholder": "搜索商户名、地址、菜名、外卖等",
-            "value": "体适能",
+            "value": "关键词",
             "label": ""
         },
-        "value": "体适能",
+        "value": "关键词",
         "time": "2024-06-16T03:09:04.388Z",
         "type": "input"
     },

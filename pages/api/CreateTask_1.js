@@ -11,28 +11,25 @@ const client = new CloudTasksClient();
 export default async function handler(req, res) {
     // TODO(developer): Uncomment these lines and replace with your values.
     const prompt = `
-As a senior operator with 5 years of Amazon operation experience, you are not only proficient in Amazon's search traffic logic, but also proficient in English and familiar with the language habits of American locals, so you can attract customers by optimizing product titles, search keywords and five points.
-
-Please output a new product title based on the following product information, and a set of five points that meet Amazon's requirements, that is, five selling points of the product.
-Title requirements:
-1. Title structure: core keywords + long tail keywords + product characteristics or application scenarios;
-2. Number of characters: 150-180;
-
-Five requirements:
-1. Must write 5 core product features;
-2. Number of characters per point: about 300 characters;
-3. Each point prefix must contain a condensed subheading, enclosed in brackets;
-4. All product information must be referred to, and each point must contain 1-2 core keywords;
-
-Brand words are prohibited;
-
-All answers in English.
+Please judge whether headings 1 and 2 are similar products, both of which are in Russian; If it is the same style reply "Y", if it is not the same style reply "N";
+How to determine whether Title 1 and Title 2 are the same? Please refer to the following examples:
+1. If the two headings belong to the umbrella, but are different colors, then the two headings belong to the same paragraph;
+2. If one of the two titles is umbrella, the other is rain shoes, then the two titles are not the same;
   `;
+
+//     const prompt = `
+// Please translate the following product information
+// 1. language of translation: Russian;
+// 6. exclusion of the words [Yuexinghui], (Unprocessed Intellectual Property), [Ande Online], (Authorization), (Southeast Asian Monopoly), (Mexican Monopoly);
+
+// The use of brand words is prohibited;
+// Output content must be in Russian.
+//   `;
     const sortedData = req.body.sortedData;
     const row = req.body.row;
     const sku = req.body.row.sku.toString();
-    const userinput = req.body.row.标题和五点;
-    const task_name = req.body.task_name;
+    const userinput = req.body.row.中文标题;
+    const taskname = 'ozon_match_1016';
     console.log('userinput:', userinput);
     console.log('sku:', sku);
     console.log('prompt:', prompt);
@@ -40,7 +37,7 @@ All answers in English.
     const queue = 'smartworkflow';
     const location = 'us-central1';
     const url = 'https://aivideo-container-omqcnm4zaq-uc.a.run.app/generate/';
-    const payload = JSON.stringify({ prompt, userinput, sku });
+    const payload = JSON.stringify({ prompt, userinput, sku, taskname });
     // const inSeconds = 180;
 
     // Construct the fully qualified queue name.

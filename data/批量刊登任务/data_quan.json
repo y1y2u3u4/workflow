@@ -1,0 +1,330 @@
+[
+    {
+        "url": "https://saaserp-pos.yibainetwork.com/#/login_page",
+        "time": "2024-06-04T09:47:11.903Z",
+        "type": "navigation"
+    },
+    {
+        "element": {
+            "tagName": "INPUT",
+            "id": "",
+            "className": "el-input__inner",
+            "name": "",
+            "innerText": "",
+            "placeholder": "请输入手机号",
+            "value": "18071302294",
+            "label": ""
+        },
+        "value": "18071302294",
+        "time": "2024-06-04T09:47:13.529Z",
+        "type": "input"
+    },
+    {
+        "element": {
+            "tagName": "INPUT",
+            "id": "",
+            "className": "el-input__inner",
+            "name": "",
+            "innerText": "",
+            "placeholder": "请输入登录密码"
+        },
+        "value": "Aa123456",
+        "time": "2024-06-04T09:47:16.979Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "INPUT",
+            "id": "",
+            "className": "el-input__inner",
+            "name": "",
+            "innerText": "",
+            "placeholder": "请输入登录密码",
+            "value": "Aa123456",
+            "label": ""
+        },
+        "value": "Aa123456",
+        "time": "2024-06-04T09:47:17.091Z",
+        "type": "input"
+    },
+    {
+        "key": "Enter",
+        "code": "Enter",
+        "time": "2024-06-04T09:47:17.536Z",
+        "type": "keydown"
+    },
+    {
+        "url": "https://saaserp-pos.yibainetwork.com/#/home_page",
+        "time": "2024-06-04T09:47:18.808Z",
+        "type": "navigation"
+    },
+    {
+        "element": {
+            "tagName": "SPAN",
+            "id": "",
+            "className": "",
+            "innerText": "刊登管理"
+        },
+        "time": "2024-06-04T09:57:30.635Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "",
+            "id": "",
+            "className": "ivu-menu-submenu-title",
+            "innerText": "",
+            "leixing": "自定义1"
+        },
+        "time": "2024-06-04T09:57:30.635Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "TEXTAREA",
+            "id": "",
+            "className": "ivu-input",
+            "name": "",
+            "innerText": "",
+            "placeholder": "SKU"
+        },
+        "value": "",
+        "time": "2024-06-04T09:57:46.401Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "TEXTAREA",
+            "id": "",
+            "className": "ivu-input",
+            "name": "",
+            "innerText": "",
+            "placeholder": "SKU",
+            "value": "10230202",
+            "label": ""
+        },
+        "value": "系统SKU",
+        "time": "2024-06-04T09:57:46.612Z",
+        "type": "input"
+    },
+    {
+        "element": {
+            "tagName": "BUTTON",
+            "id": "",
+            "className": "ivu-btn ivu-btn-primary",
+            "name": "",
+            "innerText": "查询"
+        },
+        "value": "",
+        "time": "2024-06-04T09:57:47.541Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "SPAN",
+            "id": "",
+            "className": "",
+            "innerText": "精细刊登"
+        },
+        "time": "2024-06-04T09:57:49.547Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "SPAN",
+            "id": "",
+            "className": "",
+            "innerText": "下一步"
+        },
+        "time": "2024-06-04T09:57:51.210Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "INPUT",
+            "id": "",
+            "className": "ivu-select-input",
+            "name": "",
+            "innerText": "",
+            "placeholder": "请选择",
+            "leixing": "自定义2"
+        },
+        "value": "刊登店铺",
+        "time": "2024-06-04T09:57:54.014Z",
+        "type": "click"
+    },
+
+    {
+        "element": {
+            "tagName": "TEXTAREA",
+            "id": "",
+            "className": "ivu-input",
+            "name": "",
+            "innerText": "",
+            "placeholder": "请输入",
+            "value": "Sea Shell Air Plant Holders Set Hanging Decorative Containers for Garden Beach Theme Party with Sea Urchin Hanging Pot - 5 Pcs",
+            "label": "产品标题"
+        },
+        "value": "Sea Shell Air Plant Holders Set Hanging Decorative Containers for Garden Beach Theme Party with Sea Urchin Hanging Pot - 5 Pcs",
+        "time": "2024-06-05T02:20:06.285Z",
+        "type": "input"
+    },
+    {
+        "element": {
+            "tagName": "TEXTAREA",
+            "id": "",
+            "className": "ivu-input",
+            "name": "",
+            "innerText": "",
+            "placeholder": "请输入",
+            "value": "Conch Plant Holders Sea Shell Air Plant Hanging Decorative Containers Sea Urchin Hanging Pot Garden Beach Theme Party Display Containers",
+            "label": "搜索关键词"
+        },
+        "value": "Conch Plant Holders Sea Shell Air Plant Hanging Decorative Containers Sea Urchin Hanging Pot Garden Beach Theme Party Display Containers",
+        "time": "2024-06-05T02:20:14.944Z",
+        "type": "input"
+    },
+    {
+        "element": {
+            "tagName": "TEXTAREA",
+            "id": "",
+            "className": "ivu-input",
+            "name": "",
+            "innerText": "",
+            "placeholder": "请输入",
+            "value": "**Versatile Hanging Options**: With holes at the bottom and top, these basins allow you to easily hang them in front of tables, windows, or doors. Create a unique atmosphere and bring a touch of nature indoors.",
+            "label": "要点说明1",
+            "leixing": "自定义3.1"
+        },
+        "value": "**Versatile Hanging Options**: With holes at the bottom and top, these basins allow you to easily hang them in front of tables, windows, or doors. Create a unique atmosphere and bring a touch of nature indoors.",
+        "time": "2024-06-05T02:20:20.298Z",
+        "type": "input"
+    },
+    {
+        "element": {
+            "tagName": "TEXTAREA",
+            "id": "",
+            "className": "ivu-input",
+            "name": "",
+            "innerText": "",
+            "placeholder": "请输入",
+            "value": "**Versatile Hanging Options**: With holes at the bottom and top, these basins allow you to easily hang them in front of tables, windows, or doors. Create a unique atmosphere and bring a touch of nature indoors.",
+            "label": "要点说明2",
+            "leixing": "自定义3.2"
+        },
+        "value": "**Versatile Hanging Options**: With holes at the bottom and top, these basins allow you to easily hang them in front of tables, windows, or doors. Create a unique atmosphere and bring a touch of nature indoors.",
+        "time": "2024-06-05T02:20:34.791Z",
+        "type": "input"
+    },
+    {
+        "element": {
+            "tagName": "TEXTAREA",
+            "id": "",
+            "className": "ivu-input",
+            "name": "",
+            "innerText": "",
+            "placeholder": "请输入",
+            "value": "**Multiple Sizes Available**: Ranging from 1.5 inches to 2.5 inches, our sea urchin shell hanging basins offer variety in size for different air plants. Pass plants and lines through the shells for a secure and stylish display.",
+            "label": "要点说明3",
+            "leixing": "自定义3.3"
+        },
+        "value": "**Multiple Sizes Available**: Ranging from 1.5 inches to 2.5 inches, our sea urchin shell hanging basins offer variety in size for different air plants. Pass plants and lines through the shells for a secure and stylish display.",
+        "time": "2024-06-05T02:20:41.389Z",
+        "type": "input"
+    },
+    {
+        "element": {
+            "tagName": "TEXTAREA",
+            "id": "",
+            "className": "ivu-input",
+            "name": "",
+            "innerText": "",
+            "placeholder": "请输入",
+            "value": "**Safe and Stylish Decor**: Our decorative air plant hangers are not only visually appealing but also safe for both you and your plants. The vivid colors and textures make them perfect for enhancing your home aesthetics.",
+            "label": "要点说明4",
+            "leixing": "自定义3.4"
+        },
+        "value": "**Safe and Stylish Decor**: Our decorative air plant hangers are not only visually appealing but also safe for both you and your plants. The vivid colors and textures make them perfect for enhancing your home aesthetics.",
+        "time": "2024-06-05T02:20:45.694Z",
+        "type": "input"
+    },
+    {
+        "element": {
+            "tagName": "TEXTAREA",
+            "id": "",
+            "className": "ivu-input",
+            "name": "",
+            "innerText": "",
+            "placeholder": "请输入",
+            "value": "**Fresh and Artistic Ambiance**: Transform your living space with these sea urchin shell hanging basins, adding a touch of light and nature to your home. Create a unique and inviting atmosphere with these eye-catching household decorations.",
+            "label": "要点说明5",
+            "leixing": "自定义3.5"
+        },
+        "value": "**Fresh and Artistic Ambiance**: Transform your living space with these sea urchin shell hanging basins, adding a touch of light and nature to your home. Create a unique and inviting atmosphere with these eye-catching household decorations.",
+        "time": "2024-06-05T02:20:51.950Z",
+        "type": "input"
+    },
+
+    {
+        "element": {
+            "tagName": "SPAN",
+            "id": "",
+            "className": "",
+            "innerText": "一键检测侵权词/敏感词"
+        },
+        "time": "2024-06-05T02:20:58.437Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "SPAN",
+            "id": "",
+            "className": "",
+            "innerText": "确定"
+        },
+        "time": "2024-06-05T02:21:00.437Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "SPAN",
+            "id": "",
+            "className": "",
+            "innerText": "同步至未推送站点"
+        },
+        "time": "2024-06-05T02:21:20.428Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "SPAN",
+            "id": "",
+            "className": "",
+            "innerText": "翻译"
+        },
+        "time": "2024-06-05T02:21:23.788Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "SPAN",
+            "id": "",
+            "className": "",
+            "innerText": "保存并提交所有站点"
+        },
+        "time": "2024-06-05T02:50:27.977Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "",
+            "id": "",
+            "className": "",
+            "name": "",
+            "innerText": "",
+            "leixing": "自定义4"
+        },
+        "time": "2024-06-05T02:50:35.977Z",
+        "type": "output"
+    }
+]

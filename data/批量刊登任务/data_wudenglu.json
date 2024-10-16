@@ -1,0 +1,152 @@
+[
+    {
+        "url": "https://saaserp-pos.yibainetwork.com/#/home_page",
+        "time": "2024-06-04T09:47:18.808Z",
+        "type": "navigation"
+    },
+    {
+        "element": {
+            "tagName": "SPAN",
+            "id": "",
+            "className": "",
+            "innerText": "刊登管理"
+        },
+        "time": "2024-06-04T09:57:30.635Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "",
+            "id": "",
+            "className": "ivu-menu-submenu-title",
+            "innerText": "",
+            "leixing": "自定义1"
+        },
+        "time": "2024-06-04T09:57:35.635Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "TEXTAREA",
+            "id": "",
+            "className": "ivu-input",
+            "name": "",
+            "innerText": "",
+            "placeholder": "SKU"
+        },
+        "value": "",
+        "time": "2024-06-04T09:57:46.401Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "TEXTAREA",
+            "id": "",
+            "className": "ivu-input",
+            "name": "",
+            "innerText": "",
+            "placeholder": "SKU",
+            "value": "10230202",
+            "label": ""
+        },
+        "value": "系统SKU",
+        "time": "2024-06-04T09:57:46.612Z",
+        "type": "input"
+    },
+    {
+        "element": {
+            "tagName": "BUTTON",
+            "id": "",
+            "className": "ivu-btn ivu-btn-primary",
+            "name": "",
+            "innerText": "查询"
+        },
+        "value": "",
+        "time": "2024-06-04T09:57:48.541Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "SPAN",
+            "id": "",
+            "className": "",
+            "innerText": "精细刊登"
+        },
+        "time": "2024-06-04T09:57:50.547Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "SPAN",
+            "id": "",
+            "className": "",
+            "innerText": "下一步"
+        },
+        "time": "2024-06-04T09:57:55.210Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "INPUT",
+            "id": "",
+            "className": "ivu-select-input",
+            "name": "",
+            "innerText": "",
+            "placeholder": "请选择",
+            "leixing": "自定义2"
+        },
+        "value": "刊登店铺",
+        "time": "2024-06-04T09:58:00.014Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "SPAN",
+            "id": "",
+            "className": "",
+            "innerText": "一键检测侵权词/敏感词"
+        },
+        "time": "2024-06-05T02:20:58.437Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "SPAN",
+            "id": "",
+            "className": "",
+            "innerText": "确定"
+        },
+        "time": "2024-06-05T02:21:00.437Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "SPAN",
+            "id": "",
+            "className": "",
+            "innerText": "同步至未推送站点"
+        },
+        "time": "2024-06-05T02:21:20.428Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "SPAN",
+            "id": "",
+            "className": "",
+            "innerText": "翻译"
+        },
+        "time": "2024-06-05T02:21:23.788Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "SPAN",
+            "id": "",
+            "className": "",
+            "innerText": "保存并提交所有站点"
+        },
+        "time": "2024-06-05T02:30:27.977Z",
+        "type": "click"
+    }
+]
