@@ -1,0 +1,182 @@
+[
+    {
+        "url": "https://www.dianping.com/",
+        "time": "2024-06-16T03:08:43.595Z",
+        "type": "navigation"
+    },
+    {
+        "url": "https://www.dianping.com/citylist",
+        "time": "2024-06-16T03:08:50.422Z",
+        "type": "navigation"
+    },
+    {
+        "element": {
+            "tagName": "A",
+            "id": "",
+            "className": "link onecity",
+            "name": "",
+            "innerText": "城市"
+        },
+        "value": "城市",
+        "time": "2024-06-16T03:08:55.448Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "INPUT",
+            "id": "J-search-input",
+            "className": "J-search-input",
+            "name": "",
+            "innerText": "",
+            "placeholder": "搜索商户名、地址、菜名、外卖等",
+            "value": "关键词",
+            "label": ""
+        },
+        "value": "关键词",
+        "time": "2024-06-16T03:09:04.388Z",
+        "type": "input"
+    },
+    {
+        "element": {
+            "tagName": "A",
+            "id": "J-all-btn",
+            "className": "search-btn J-search-btn",
+            "name": "",
+            "innerText": "搜索"
+        },
+        "time": "2024-06-16T03:09:10.388Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "A",
+            "id": "",
+            "className": "",
+            "name": "",
+            "innerText": "好评"
+        },
+        "time": "2024-06-16T03:09:11.388Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "A",
+            "id": "",
+            "className": "",
+            "name": "",
+            "innerText": "行政区"
+        },
+        "time": "2024-06-16T03:09:12.388Z",
+        "type": "click"
+    },
+
+    {
+        "element": {
+            "tagName": "A",
+            "id": "",
+            "className": "",
+            "name": "",
+            "innerText": "行政区",
+            "leixing": "自定义0"
+        },
+        "time": "2024-06-16T03:09:13.388Z",
+        "type": "output"
+    },
+    {
+        "loopEvents": [
+            {
+                "action": "scroll",
+                "direction": "down",
+                "distance": 500,
+                "time": "2024-06-16T03:09:13.638Z",
+                "type": "scroll"
+            },
+            {
+                "action": "scroll",
+                "direction": "down",
+                "distance": 500,
+                "time": "2024-06-16T03:09:14.638Z",
+                "type": "scroll"
+            },
+            {
+                "action": "scroll",
+                "direction": "down",
+                "distance": 500,
+                "time": "2024-06-16T03:09:15.638Z",
+                "type": "scroll"
+            },
+            {
+                "action": "scroll",
+                "direction": "down",
+                "distance": 500,
+                "time": "2024-06-16T03:09:16.638Z",
+                "type": "scroll"
+            },
+            {
+                "action": "scroll",
+                "direction": "down",
+                "distance": 500,
+                "time": "2024-06-16T03:09:17.638Z",
+                "type": "scroll"
+            },
+            {
+                "element": {
+                    "tagName": "",
+                    "id": "",
+                    "className": "",
+                    "name": "",
+                    "innerText": "",
+                    "leixing": "自定义1"
+                },
+                "time": "2024-06-16T03:09:20.713Z",
+                "type": "output"
+            },
+            {
+                "element": {
+                    "tagName": "",
+                    "id": "",
+                    "className": "next",
+                    "name": "",
+                    "innerText": ""
+                },
+                "time": "2024-06-16T03:09:30.388Z",
+                "type": "click"
+            }
+        ],
+        "loopCount": 50,
+        "type": "loop"
+    },
+    {
+        "loopEvents": [
+            {
+                "element": {
+                    "tagName": "A",
+                    "id": "",
+                    "className": "",
+                    "name": "",
+                    "innerText": "",
+                    "leixing": "自定义x1"
+                    
+                },
+                "time": "2024-06-16T03:09:30.388Z",
+                "type": "click"
+            },
+            {
+                "element": {
+                    "tagName": "",
+                    "id": "",
+                    "className": "",
+                    "name": "",
+                    "innerText": "",
+                    "leixing": "自定义x2"
+                },
+                "time": "2024-06-16T03:09:31.713Z",
+                "type": "output"
+            }
+        ],
+        "loopCount": 50,
+        "type": "loop1"
+    }
+    
+]
+

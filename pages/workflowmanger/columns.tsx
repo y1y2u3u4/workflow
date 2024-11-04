@@ -224,6 +224,8 @@ const ActionsCell = ({ row, table }: { row: any, table: any }) => {
         const processedData = [];
         //构建 5 个adsPowerUserId并且在使用的时候依次使用
         // const adsPowerUserIds = ['kn8o287', 'knibk1e', 'knibk1h', 'knibk1k', 'knibk1k'];
+        //runway 专用
+        // const adsPowerUserIds = ['kp26yuj'];
         const adsPowerUserIds = ['kn8o287'];
         const urls = [
             // 'https://test1-container-omqcnm4zaq-uc.a.run.app/scrape/',
@@ -308,20 +310,20 @@ const ActionsCell = ({ row, table }: { row: any, table: any }) => {
             // /api/CreateTask_6
             // /api/CreateTask_scheduler
             const leixing=selectedValue_2
-            // const res = await fetch('/api/CreateTask_6', {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json'
-            //     },
-            //     body: JSON.stringify({ sortedData, row, task_name, leixing, adsPowerUserId,url })
-            // });
             const res = await fetch('http://localhost:8082/scrape', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ sortedData, row, task_name, leixing, adsPowerUserId })
+                body: JSON.stringify({ sortedData, row, task_name, leixing, adsPowerUserId,url })
             });
+            // const res = await fetch('http://localhost:8082/scrape', {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json'
+            //     },
+            //     body: JSON.stringify({ sortedData, row, task_name, leixing, adsPowerUserId })
+            // });
 
             const reader = res.body?.getReader();
             const decoder = new TextDecoder('utf-8');

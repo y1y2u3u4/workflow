@@ -144,38 +144,6 @@
         ],
         "loopCount": 50,
         "type": "loop"
-    },
-    {
-        "loopEvents": [
-            {
-                "element": {
-                    "tagName": "A",
-                    "id": "",
-                    "className": "",
-                    "name": "",
-                    "innerText": "",
-                    "leixing": "自定义x1"
-                    
-                },
-                "time": "2024-06-16T03:09:30.388Z",
-                "type": "click"
-            },
-            {
-                "element": {
-                    "tagName": "",
-                    "id": "",
-                    "className": "",
-                    "name": "",
-                    "innerText": "",
-                    "leixing": "自定义x2"
-                },
-                "time": "2024-06-16T03:09:31.713Z",
-                "type": "output"
-            }
-        ],
-        "loopCount": 50,
-        "type": "loop1"
     }
-    
 ]
 

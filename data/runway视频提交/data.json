@@ -1,0 +1,135 @@
+[
+    {
+        "url": "https://chatgpt.com/g/g-DljXiOYIM-runway-magic-prompt",
+        "time": "2024-06-04T09:47:11.903Z",
+        "type": "navigation"
+    },
+    {
+        "element": {
+            "tagName": "DIV",
+            "id": "prompt-textarea",
+            "className": "_prosemirror-parent_15ceg_1 text-token-text-primary max-h-[25dvh] max-h-52 overflow-auto default-browser",
+            "name": "",
+            "innerText": "",
+            "placeholder": "Message Runway Magic Prompt",
+            "label": ""
+        },
+        "value": "提示词",
+        "time": "2024-06-04T09:47:13.529Z",
+        "type": "input"
+    },
+    {
+        "element": {
+            "tagName": "DIV",
+            "id": "",
+            "className": "button.flex.items-center.justify-center.h-8.w-8.rounded-lg.rounded-bl-xl",
+            "style": {
+                "opacity": "1",
+                "willChange": "auto"
+            },
+            "innerText": "",
+            "leixing": "leixing_001"
+        },
+        "value": "图片存储位置",
+        "time": "2024-06-04T09:47:16.529Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "DIV",
+            "id": "",
+            "className": "mb-1 me-1",
+            "children": [
+                {
+                    "tagName": "BUTTON",
+                    "ariaLabel": "Send prompt",
+                    "dataTestid": "send-button",
+                    "className": "flex h-8 w-8 items-center justify-center rounded-full transition-colors hover:opacity-70 focus-visible:outline-none focus-visible:outline-black disabled:text-[#f4f4f4] disabled:hover:opacity-100 dark:focus-visible:outline-white disabled:dark:bg-token-text-quaternary dark:disabled:text-token-main-surface-secondary bg-black text-white dark:bg-white dark:text-black disabled:bg-[#D7D7D7]",
+                    "children": [
+                        {
+                            "tagName": "SVG",
+                            "width": "32",
+                            "height": "32",
+                            "viewBox": "0 0 32 32",
+                            "fill": "none",
+                            "className": "icon-2xl"
+                        }
+                    ]
+                }
+            ]
+        },
+        "value": "",
+        "time": "2024-06-04T09:50:13.529Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "DIV",
+            "id": "",
+            "className": "overflow-y-auto p-4",
+            "dir": "ltr",
+            "leixing": "leixing_002"
+        },
+        "value": "",
+        "time": "2024-06-04T09:52:13.529Z",
+        "type": "click"
+    },
+    {
+        "url": "https://app.runwayml.com/video-tools/teams/BenPocketAIGC/ai-tools/generative-video",
+        "time": "2024-06-04T09:52:18.808Z",
+        "type": "navigation"
+    },
+    {
+        "element": {
+            "tagName": "DIV",
+            "id": "",
+            "className": "TextPromptEditor-module__container__wyYqU",
+            "leixing": "leixing_003"
+        },
+        "value": "",
+        "time": "2024-06-04T09:52:30.529Z",
+        "type": "input"
+    },
+    {
+        "element": {
+            "tagName": "BUTTON",
+            "id": "",
+            "className": "KeyframesInputPanel-module__smallTertiaryButton__C9L_O",
+            "type": "button",
+            "ariaLabel": "Open asset selector",
+            "innerText": "Select Asset",
+            "dataRac": ""
+        },
+        "value": "",
+        "time": "2024-06-04T09:53:13.529Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "DIV",
+            "id": "",
+            "className": "button.flex.items-center.justify-center.h-8.w-8.rounded-lg.rounded-bl-xl",
+            "style": {
+                "opacity": "1",
+                "willChange": "auto"
+            },
+            "innerText": "",
+            "leixing": "leixing_004"
+        },
+        "value": "图片存储位置",
+        "time": "2024-06-04T09:53:30.529Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "DIV",
+            "id": "",
+            "className": "Base__Box-sc-thne2y-0 GenerateButtonTooltip___StyledBox-sc-kfxnyz-1 bAtgbn ShortcutTooltip___StyledRadixTooltipTrigger-sc-1bugq75-7 icvmxJ",
+            "dataState": "closed",
+            "leixing": "leixing_005"
+        },
+        "value": "",
+        "time": "2024-06-04T09:54:40.529Z",
+        "type": "click"
+    }
+]

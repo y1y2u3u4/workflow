@@ -11,10 +11,27 @@ const client = new CloudTasksClient();
 export default async function handler(req, res) {
     // TODO(developer): Uncomment these lines and replace with your values.
     const prompt = `
-Please judge whether headings 1 and 2 are similar products, both of which are in Russian; If it is the same style reply "Y", if it is not the same style reply "N";
-How to determine whether Title 1 and Title 2 are the same? Please refer to the following examples:
-1. If the two headings belong to the umbrella, but are different colors, then the two headings belong to the same paragraph;
-2. If one of the two titles is umbrella, the other is rain shoes, then the two titles are not the same;
+As a senior operator with 5 years of experience in Amazon operations, you are not only proficient in Amazon's search traffic logic, but also proficient in English and familiar with the language habits of American locals, so you can promote sales by optimizing product titles and five points.
+
+Please output a new product title based on the following product information, and a set of five points.
+
+Title requirements:
+1. Title structure: core keywords + long tail keywords + product characteristics or application scenarios;
+You can refer to popular title formats, such as: "massage ball,  360 Degrees Rotation Mountable Massage Ball,Wall Mountable Suction Cup Muscle Massage Ball,Wall Massage Roller with  Manual Suction Cup for Relieve Muscle and Joint Pain Relax Full Body”
+2. Number of characters: 150-180 characters;
+3. Do not use special characters, such as: /,,, and. , -, &,
+4. Avoid repeating brand names.
+
+Five points, the five selling points of the product, reply to the request:
+Idea reference: who will buy or use this product, in what scenario; Put yourself in the customer's shoes and highlight how the product solves their problem or meets their needs.
+Requirements:
+1. Must write 5 core features of the product, the more can attract customers to place orders the more forward the selling point;
+2. Number of characters per point: about 300 characters;
+3. Each point prefix must contain a condensed subheading, enclosed in brackets;
+4. All product information must be referred to, and each point must contain 1-2 core keywords;
+5. Prohibit brand words;
+
+All answers in English.
   `;
 
 //     const prompt = `
@@ -27,9 +44,9 @@ How to determine whether Title 1 and Title 2 are the same? Please refer to the f
 //   `;
     const sortedData = req.body.sortedData;
     const row = req.body.row;
-    const sku = req.body.row.sku.toString();
-    const userinput = req.body.row.中文标题;
-    const taskname = 'ozon_match_1016';
+    const sku = req.body.row.sku单品分组.toString();
+    const userinput = req.body.row.标题和五点参考文案;
+    const taskname = 'ama_keyword_1101';
     console.log('userinput:', userinput);
     console.log('sku:', sku);
     console.log('prompt:', prompt);
