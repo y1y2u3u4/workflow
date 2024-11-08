@@ -23,16 +23,17 @@ export default async function handler(req, res) {
     const location = 'us-central1';
 
 
-    const queue = 'smartworkflow-5';
-    const url = req.body.url;
-    const payload = JSON.stringify({ sortedData, row, task_name, leixing, adsPowerUserId });
-    const inSeconds = 180;
-    //爬虫任务 url 及队列
-    // const queue = 'smartworkflow-1';
-    // const url = 'https://test1-container-1-omqcnm4zaq-uc.a.run.app/scrape/';
-    // const adsPowerId = '35.239.21.208';
-    // const payload = JSON.stringify({ sortedData, row, task_name, leixing, adsPowerUserId, adsPowerId });
+    // const queue = 'smartworkflow-5';
+    // const url = req.body.url;
+    // const payload = JSON.stringify({ sortedData, row, task_name, leixing, adsPowerUserId });
     // const inSeconds = 180;
+    //爬虫任务 url 及队列
+    const queue = 'smartworkflow-1';
+    const url = 'https://test1-container-1-omqcnm4zaq-uc.a.run.app/scrape/';
+    // const url = 'https://6983-188-253-112-27.ngrok-free.app/scrape/';
+    const adsPowerId = '34.133.244.73';
+    const payload = JSON.stringify({ sortedData, row, task_name, leixing, adsPowerUserId, adsPowerId });
+    const inSeconds = 180;
 
     // Construct the fully qualified queue name.
     const parent = client.queuePath(project, location, queue);

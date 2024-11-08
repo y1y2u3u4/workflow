@@ -226,7 +226,7 @@ const ActionsCell = ({ row, table }: { row: any, table: any }) => {
         // const adsPowerUserIds = ['kn8o287', 'knibk1e', 'knibk1h', 'knibk1k', 'knibk1k'];
         //runway 专用
         // const adsPowerUserIds = ['kp26yuj'];
-        const adsPowerUserIds = ['kn8o287'];
+        const adsPowerUserIds = ['kp26yuj'];
         const urls = [
             // 'https://test1-container-omqcnm4zaq-uc.a.run.app/scrape/',
             'https://test1-container-001-omqcnm4zaq-uc.a.run.app/scrape/',
@@ -300,6 +300,7 @@ const ActionsCell = ({ row, table }: { row: any, table: any }) => {
         let runoutput;
         let runresult;
         const task_name = `${row.task_name}`
+        const adsPowerId = '34.16.103.226';
         try {
             // http://localhost:8082/scrape
             // https://test1-container-omqcnm4zaq-uc.a.run.app/scrape
@@ -317,12 +318,12 @@ const ActionsCell = ({ row, table }: { row: any, table: any }) => {
                 },
                 body: JSON.stringify({ sortedData, row, task_name, leixing, adsPowerUserId,url })
             });
-            // const res = await fetch('http://localhost:8082/scrape', {
+            // const res = await fetch('https://test1-container-1-omqcnm4zaq-uc.a.run.app/scrape', {
             //     method: 'POST',
             //     headers: {
             //         'Content-Type': 'application/json'
             //     },
-            //     body: JSON.stringify({ sortedData, row, task_name, leixing, adsPowerUserId })
+            //     body: JSON.stringify({ sortedData, row, task_name, leixing, adsPowerUserId, adsPowerId })
             // });
 
             const reader = res.body?.getReader();

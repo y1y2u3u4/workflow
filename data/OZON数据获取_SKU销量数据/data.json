@@ -1,0 +1,32 @@
+[
+    {
+        "url": "https://seller.ozon.ru/app/analytics/what-to-sell/ozon-bestsellers",
+        "time": "2024-09-13T17:00:52.359Z",
+        "type": "navigation"
+    },
+    {
+        "element": {
+            "tagName": "INPUT",
+            "id": "baseInput___-C51M",
+            "className": "base-input-module_baseInput_vFlRR input-module_baseInput_QHL39 typography-module_table-500_N-tJ7",
+            "placeholder": "请输入商品名称或代码",
+            "value": "产品编码(有重复)",
+            "leixing": "自定义4"
+        },
+        "value": "产品编码(有重复)", 
+        "time": "2024-09-13T17:01:00.000Z",
+        "type": "click"
+    },
+    {
+        "element": {
+            "tagName": "",
+            "id": "",
+            "className": "",
+            "name": "",
+            "innerText": "",
+            "leixing": "自定义4"
+        },
+        "time": "2024-09-13T17:01:05.252Z",
+        "type": "output"
+    }
+]
