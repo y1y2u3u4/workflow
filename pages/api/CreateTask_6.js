@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     // TODO(developer): Uncomment these lines and replace with your values.
     const sortedData = req.body.sortedData;
     const row = req.body.row;
-    const task_name = req.body.row.task_name;
+    const task_name = req.body.task_name;
     const adsPowerUserId = req.body.adsPowerUserId;
 
     const leixing = req.body.leixing;
@@ -29,9 +29,10 @@ export default async function handler(req, res) {
     // const inSeconds = 180;
     //爬虫任务 url 及队列
     const queue = 'smartworkflow-1';
+    // const queue = 'smartworkflow-5';
     const url = 'https://test1-container-1-omqcnm4zaq-uc.a.run.app/scrape/';
-    // const url = 'https://6983-188-253-112-27.ngrok-free.app/scrape/';
-    const adsPowerId = '34.133.244.73';
+    // const url = 'https://fdc8e6f3a8b4.ngrok.app/scrape/';
+    const adsPowerId = '34.56.235.19';
     const payload = JSON.stringify({ sortedData, row, task_name, leixing, adsPowerUserId, adsPowerId });
     const inSeconds = 180;
 

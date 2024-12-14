@@ -1,0 +1,145 @@
+[
+    {
+        "url": "https://creator.douyin.com/creator-micro/home",
+        "time": "2024-06-16T03:08:50.422Z",
+        "type": "navigation"
+    },
+    {
+        "loopEvents": [
+            {
+                "element": {
+                    "tagName": "",
+                    "id": "",
+                    "className": "",
+                    "name": "",
+                    "innerText": "",
+                    "value": "发布账号",
+                    "leixing": "自定义2"
+                },
+                "value": "发布账号",
+                "time": "2024-06-16T03:08:52.713Z",
+                "type": "click"
+            },
+            {
+                "element": {
+                    "tagName": "SPAN",
+                    "id": "",
+                    "className": "_Ji1e",
+                    "name": "",
+                    "innerText": "管理"
+                },
+                "value": "",
+                "time": "2024-06-16T03:08:55.448Z",
+                "type": "click"
+            },
+            {
+                "url": "https://creator.douyin.com/content/upload",
+                "time": "2024-06-16T03:09:00.388Z",
+                "type": "navigation"
+            },
+            {
+                "element": {
+                    "tagName": "",
+                    "id": "",
+                    "className": "",
+                    "name": "",
+                    "innerText": "",
+                    "value": "视频存储位置",
+                    "leixing": "自定义1"
+                },
+                "value": "视频存储位置",
+                "time": "2024-06-16T03:09:05.713Z",
+                "type": "click"
+            },
+            {
+                "element": {
+                    "tagName": "INPUT",
+                    "id": "",
+                    "className": "el-input__inner",
+                    "name": "",
+                    "innerText": "",
+                    "placeholder": "请输入手机号",
+                    "value": "标题",
+                    "label": "自定义1"
+                },
+                "value": "标题",
+                "time": "2024-06-16T03:09:10.713Z",
+                "type": "input"
+            },
+            {
+                "element": {
+                    "tagName": "INPUT",
+                    "id": "",
+                    "className": "el-input__inner",
+                    "name": "",
+                    "innerText": "",
+                    "placeholder": "请输入手机号",
+                    "value": "简介",
+                    "label": "自定义2"
+                },
+                "value": "简介",
+                "time": "2024-06-16T03:09:15.713Z",
+                "type": "input"
+            },
+            {
+                "element": {
+                    "tagName": "INPUT",
+                    "id": "",
+                    "className": "el-input__inner",
+                    "name": "",
+                    "innerText": "",
+                    "placeholder": "请输入手机号",
+                    "value": "标签",
+                    "label": "自定义3"
+                },
+                "value": "标签",
+                "time": "2024-06-16T03:09:17.713Z",
+                "type": "input"
+            },
+            {
+                "element": {
+                    "tagName": "INPUT",
+                    "id": "",
+                    "className": "el-input__inner",
+                    "name": "",
+                    "innerText": "",
+                    "placeholder": "请输入手机号",
+                    "value": "允许他人保存视频",
+                    "label": "自定义4"
+                },
+                "value": "允许他人保存视频",
+                "time": "2024-06-16T03:09:20.713Z",
+                "type": "input"
+            },
+            {
+                "element": {
+                    "tagName": "INPUT",
+                    "id": "",
+                    "className": "el-input__inner",
+                    "name": "",
+                    "innerText": "",
+                    "placeholder": "请输入手机号",
+                    "value": "发布时间",
+                    "label": "自定义5"
+                },
+                "value": "发布时间",
+                "time": "2024-06-16T03:09:23.713Z",
+                "type": "input"
+            },
+            {
+                "element": {
+                    "tagName": "SPAN",
+                    "id": "",
+                    "className": "logout",
+                    "name": "",
+                    "innerText": "发布",
+                    "leixing": "自定义5"
+                },
+                "time": "2024-06-16T03:09:25.388Z",
+                "type": "click"
+            }
+        ],
+        "loopCount": 10,
+        "type": "loop"
+    }
+]

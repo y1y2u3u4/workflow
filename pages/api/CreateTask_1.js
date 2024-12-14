@@ -11,27 +11,20 @@ const client = new CloudTasksClient();
 export default async function handler(req, res) {
     // TODO(developer): Uncomment these lines and replace with your values.
     const prompt = `
-As a senior operator with 5 years of experience in Amazon operations, you are not only proficient in Amazon's search traffic logic, but also proficient in English and familiar with the language habits of American locals, so you can promote sales by optimizing product titles and five points.
+As a senior operator with 5 years of ozon operation experience, you are not only proficient in Russian, but also proficient in OZON's search traffic logic, and familiar with the language habits of local Russian people.Please generate titles and search keywords that meet OZON's requirements based on the information you give
 
-Please output a new product title based on the following product information, and a set of five points.
+Product title requirements：
+1.Title structure: 2-3 core keywords containing product characteristics + applicable scenarios
+2. It is forbidden to repeat Russian words;
+3. Number of characters: no more than 100 characters；
+4. Exclude words such as [Yuexinghui], (unprocessed intellectual property rights), [Ande Online], (authorization), (Southeast Asia Monopoly), (Mexico Monopoly), etc.；
 
-Title requirements:
-1. Title structure: core keywords + long tail keywords + product characteristics or application scenarios;
-You can refer to popular title formats, such as: "massage ball,  360 Degrees Rotation Mountable Massage Ball,Wall Mountable Suction Cup Muscle Massage Ball,Wall Massage Roller with  Manual Suction Cup for Relieve Muscle and Joint Pain Relax Full Body”
-2. Number of characters: 150-180 characters;
-3. Do not use special characters, such as: /,,, and. , -, &,
-4. Avoid repeating brand names.
+Search keyword requirements：
+1. Provide keyword phrases that highly match product information, in line with the search habits and language habits of Russian consumers；
+2. Search keywords must be Russian phrases；
+3. Search keywords are limited to 150 characters；
 
-Five points, the five selling points of the product, reply to the request:
-Idea reference: who will buy or use this product, in what scenario; Put yourself in the customer's shoes and highlight how the product solves their problem or meets their needs.
-Requirements:
-1. Must write 5 core features of the product, the more can attract customers to place orders the more forward the selling point;
-2. Number of characters per point: about 300 characters;
-3. Each point prefix must contain a condensed subheading, enclosed in brackets;
-4. All product information must be referred to, and each point must contain 1-2 core keywords;
-5. Prohibit brand words;
-
-All answers in English.
+All feedback content must be in Russian!！！
   `;
 
 //     const prompt = `
@@ -44,9 +37,9 @@ All answers in English.
 //   `;
     const sortedData = req.body.sortedData;
     const row = req.body.row;
-    const sku = req.body.row.sku单品分组.toString();
-    const userinput = req.body.row.标题和五点参考文案;
-    const taskname = 'ama_keyword_1101';
+    const sku = req.body.row[0].sku单品分组.toString();
+    const userinput = req.body.row[0].标题和五点参考文案;
+    const taskname = 'ozon_fanyi_002';
     console.log('userinput:', userinput);
     console.log('sku:', sku);
     console.log('prompt:', prompt);

@@ -222,11 +222,12 @@ const ActionsCell = ({ row, table }: { row: any, table: any }) => {
 
     async function processRows(sortedData: any, dataObjects: string | any[], start: number, step: number) {
         const processedData = [];
+        const batchSize = 1; // 设置每批处理的行数
         //构建 5 个adsPowerUserId并且在使用的时候依次使用
-        // const adsPowerUserIds = ['kn8o287', 'knibk1e', 'knibk1h', 'knibk1k', 'knibk1k'];
+        // const adsPowerUserIds = ['kn8o287', 'knibk1e', 'knibk1h', 'knibk1k', 'knibk1k','knj8fld'];
         //runway 专用
         // const adsPowerUserIds = ['kp26yuj'];
-        const adsPowerUserIds = ['kp26yuj'];
+        const adsPowerUserIds = ['knj8fld'];
         const urls = [
             // 'https://test1-container-omqcnm4zaq-uc.a.run.app/scrape/',
             'https://test1-container-001-omqcnm4zaq-uc.a.run.app/scrape/',
@@ -251,21 +252,40 @@ const ActionsCell = ({ row, table }: { row: any, table: any }) => {
         ];
 
         // for (let i = start; i < dataObjects.length; i += step) {
-        for (let i = start; i < dataObjects.length; i += step) {
-            const row = dataObjects[i];
+        for (let i = start * batchSize; i < dataObjects.length; i += (step * batchSize)) {
+            // 获取一批数据(最多5个)
+            const currentBatch = dataObjects.slice(i, i + batchSize);
+            console.log(`处理第 ${i / batchSize + 1} 批数据, 共 ${currentBatch.length} 条`);
+
+            // const row = dataObjects[i];
+            // const adsPowerUserId = adsPowerUserIds[i % adsPowerUserIds.length];
+            // const url = urls[i % urls.length];
+            // try {
+            //     console.log('adsPowerUserId:', adsPowerUserId);
+            //     await new Promise(resolve => setTimeout(resolve, 5000));
+            //     const processedRow = await processRow(sortedData, row, adsPowerUserId,url);
+            //     console.log('processedRow:', processedRow);
+            //     processedData.push(processedRow);
+            // } catch (error) {
+            //     console.error('Error processing row:', error);
+            //     processedData.push({ ...row, status: 'Error' });
+            // }
+
             const adsPowerUserId = adsPowerUserIds[i % adsPowerUserIds.length];
             const url = urls[i % urls.length];
             try {
-                console.log('adsPowerUserId:', adsPowerUserId);
                 await new Promise(resolve => setTimeout(resolve, 5000));
-                const processedRow = await processRow(sortedData, row, adsPowerUserId,url);
+                const processedRow = await processRow(sortedData, currentBatch, adsPowerUserId, url);
                 console.log('processedRow:', processedRow);
                 processedData.push(processedRow);
             } catch (error) {
-                console.error('Error processing row:', error);
-                processedData.push({ ...row, status: 'Error' });
+                console.error('Error processing batch:', error);
+                if (Array.isArray(currentBatch)) {
+                    currentBatch.forEach((batchItem: any) => {
+                        processedData.push({ ...batchItem, status: 'Error' });
+                    });
+                }
             }
-            
         }
 
         // try 
@@ -299,7 +319,9 @@ const ActionsCell = ({ row, table }: { row: any, table: any }) => {
     const fetchWsEndpoint = async (sortedData:any,row: any,adsPowerUserId:any,url:any) => {
         let runoutput;
         let runresult;
-        const task_name = `${row.task_name}`
+        const task_name = Array.isArray(row)
+            ? `${row[0].task_name}`
+            : `${row.task_name}`;
         const adsPowerId = '34.16.103.226';
         try {
             // http://localhost:8082/scrape

@@ -1,6 +1,6 @@
 [
     {
-        "url": "https://seller.ozon.ru/app/analytics/what-to-sell/ozon-bestsellers",
+        "url": "https://calculator.ozon.ru/?__rr=1",
         "time": "2024-09-13T17:00:52.359Z",
         "type": "navigation"
     },
@@ -9,11 +9,12 @@
             {
                 "element": {
                     "tagName": "INPUT",
-                    "id": "baseInput___-C51M",
-                    "className": "base-input-module_baseInput_vFlRR input-module_baseInput_QHL39 typography-module_table-500_N-tJ7",
-                    "placeholder": "请输入商品名称或代码",
+                    "id": "input___u0g5b",
+                    "className": "ozi__input__input__4zrfj ozi-table-500 ozi__use-autofill__autofill__aSLBJ ozi__input__hidePlaceholder__4zrfj",
                     "value": "产品编码(有重复)",
+                    "label": "Поиск товара",
                     "leixing": "自定义4"
+                    
                 },
                 "value": "产品编码(有重复)",
                 "time": "2024-09-13T17:01:00.000Z",
@@ -36,6 +37,3 @@
         "type": "loop_new"
     }
 ]
-
-
-
