@@ -25,6 +25,7 @@ const Workflow: NextPage = memo(() => {
   const [submitProgress, setSubmitProgress] = useState(0);
   const [doneProgress, setDoneProgress] = useState(0);
   const [taskIds, setTaskIds] = useState<string[]>([]);
+  const [batchSize, setBatchSize] = useState(20);
 
   const [steps, setSteps] = useState([
     {
@@ -99,46 +100,71 @@ const Workflow: NextPage = memo(() => {
       toast.error("Please input both description and user input");
       return;
     }
-    let allData: { taskname: any; taskIds: string[]; }[] | PromiseLike<{ taskname: any; taskIds: string[]; }[] | undefined> | undefined = [];
-    
-    for (const step of steps) {
-      // 创建一个数组，这个数组包含了所有的请求
-      setSubmitProgress(0);
-      let stepTaskIds = []; // 为每个步骤创建一个新的taskIds数组
+    let allData: { taskname: any; taskIds: string[]; }[] = [];
 
-      for (let i = 0; i < shuruData.length; i++) {
-        const input = shuruData[i];
-        const description = step.prompt;
-        const sku = input.sku;
-        const user_input = step.selectedValue === 'previous' ? input[`${step.id - 1}&churuneirong`] : input[step.selectedValue];
-
-        try {
-          const response = await fetch("/api/CreateTask_0", {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ description, user_input, sku, taskname }),
-          });
-
-          if (!response.ok) {
-            throw new Error("请求失败");
-          }
-
-          const data = await response.json();
-          if (data.taskId) {
-            stepTaskIds.push(data.taskId); // 直接添加到stepTaskIds数组
-          }
-          setSubmitProgress(((i + 1) / shuruData.length) * 100);
-        } catch (error) {
-          toast.error(`提交任务 ${i + 1} 失败`);
-          console.error(error);
-        }
-      }
-      allData.push({ taskname: taskname, taskIds: stepTaskIds });
-
+    // 获取 openai 配置
+    const model = Cookies.get('model');
+    const API_KEY = Cookies.get('apiKey');
+    if (!model || !API_KEY) {
+      toast.error('请先选择模型并输入 OpenAI API Key');
+      return;
     }
-    
+
+    for (const step of steps) {
+      setSubmitProgress(0);
+      let stepTaskIds: string[] = [];
+      let completedCount = 0;
+
+      // 分批处理
+      for (let batchStart = 0; batchStart < shuruData.length; batchStart += batchSize) {
+        const batch = shuruData.slice(batchStart, batchStart + batchSize);
+
+        // 并发请求
+        const promises = batch.map(async (input: any, i: number) => {
+          const description = step.prompt;
+          const sku = input.sku;
+          const user_input = step.selectedValue === 'previous' ? input[`${step.id - 1}&churuneirong`] : input[step.selectedValue];
+
+          try {
+            const response = await fetch("https://api.openai.com/v1/chat/completions", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${API_KEY}`,
+              },
+              body: JSON.stringify({
+                model: model,
+                messages: [
+                  { role: "system", content: description },
+                  { role: "user", content: user_input }
+                ],
+                // 你可以根据需要添加 temperature, max_tokens 等参数
+              }),
+            });
+
+            if (!response.ok) {
+              throw new Error("OpenAI请求失败");
+            }
+            const data = await response.json();
+            const result = data.choices?.[0]?.message?.content || "";
+            // 这里将 result 存入 stepTaskIds，后续可用于输出
+            stepTaskIds.push(result);
+          } catch (error) {
+            toast.error(`提交任务 ${batchStart + i + 1} 失败`);
+            console.error(error);
+          } finally {
+            completedCount++;
+            setSubmitProgress((completedCount / shuruData.length) * 100);
+          }
+        });
+
+        // 等待本批次全部完成
+        await Promise.all(promises);
+      }
+
+      allData.push({ taskname: taskname, taskIds: stepTaskIds });
+    }
+
     console.log(`allData`, allData);
     return allData;
   }, {
@@ -146,12 +172,16 @@ const Workflow: NextPage = memo(() => {
     onSuccess: (allData) => {
       console.log(`allData`, allData);
       if (allData && allData.length > 0) {
-        ask(allData[0]);
-      } else {
-        console.error('allData 为空或未定义');
+        // 只处理第一个 step 的结果
+        const aiResults = allData[0]?.taskIds || [];
+        const shuruData_new = shuruData.map((item: any, idx: number) => ({
+          ...item,
+          aiResult: aiResults[idx] || ''
+        }));
+        setShuruData_new(shuruData_new);
       }
-      toast.success("新操作成功完成");
-      // setLoading(false);
+      toast.success("所有任务已完成");
+      setLoading(false);
     },
     onError: () => {
       toast.error("Gen music failed");
@@ -367,13 +397,21 @@ const Workflow: NextPage = memo(() => {
         ></div>
       </div>
       <div className="mt-2">提交进度: {submitProgress.toFixed(2)}%</div>
-      <div className="w-full mt-4 bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-        <div
-          className="bg-blue-600 h-2.5 rounded-full"
-          style={{ width: `${doneProgress}%` }}
-        ></div>
+
+      {/* 并发数输入框 */}
+      <div className="w-full flex flex-row items-center justify-start gap-2 mt-4">
+        <label htmlFor="batchSizeInput" className="text-sm text-gray-700">每批并发数：</label>
+        <input
+          id="batchSizeInput"
+          type="number"
+          min={1}
+          max={100}
+          value={batchSize}
+          onChange={e => setBatchSize(Number(e.target.value))}
+          className="border rounded px-2 py-1 w-20 text-center"
+        />
+        <span className="text-xs text-gray-400">（默认20，建议10~50，过大可能被限流）</span>
       </div>
-      <div className="mt-2">完成进度: {doneProgress.toFixed(2)}%</div>
 
       <Button className="w-1/3 mt-4 font-bold" type="button" disabled={loading || isCompleted} onClick={onSubmit}>
         {(loading ? "Generating..." : "Generate")}
