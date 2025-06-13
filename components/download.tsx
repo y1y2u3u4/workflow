@@ -1,12 +1,25 @@
-import React, { useRef, useState } from 'react';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useExcelData } from '../contexts/AppContext';
 import * as XLSX from 'xlsx';
 import { saveAs } from 'file-saver';
 function DownloadButton() {
-    const fileInputRef = useRef<HTMLInputElement>(null);
-    const { excelData, shuruData, shuruData_new } = useExcelData();
-    const data = (shuruData_new || []).length > 0 ? shuruData_new : shuruData;
+    const { excelData, shuruData_new } = useExcelData();
+
+    const formatExcelData = () => {
+        if (!excelData || excelData.length === 0) return [] as any[];
+        const headers = excelData[0];
+        return excelData.slice(1).map((row: any[]) => {
+            const item: { [key: string]: any } = {};
+            headers.forEach((header: string, idx: number) => {
+                item[header] = row[idx];
+            });
+            return item;
+        });
+    };
+
+    const data = (shuruData_new || []).length > 0
+        ? shuruData_new
+        : formatExcelData();
 
     function downloadFile(selectedData: unknown[]) {
         // 获取选中行的数据
@@ -44,7 +57,7 @@ function DownloadButton() {
     };
     useEffect(() => {
         console.log('excelData', excelData);
-    }, [excelData, shuruData, shuruData_new]); // 依赖项数组中包含 excelData
+    }, [excelData, shuruData_new]); // 依赖项数组中包含 excelData
 
 
     return (
